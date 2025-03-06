@@ -1,0 +1,36 @@
+{
+	"data": "ENC[AES256_GCM,data:AFe77NmraqxMfncW+fmZZa45y7mg6YCyWWr9mWPGjFkruODg4yOsUIsRsz9lvmHCeeVD62aANCQUWVuL9SfA5Qk0ixKoCH0ycXj98jFACrbduXp6ChC1TuQkoRFFGAYAbsKt/tQMhSpJKHYzItCqDUj1u8GZZj/HbzoAlwG906X9UyiAZRM9n9I95mvvZDp92ptwGAP2+12Qm/ulMnzN9D8JTh/rndtIKZFqDVkENu6M+ehwZ6UEpXb6hODsUiv/JI/wWsyTEGPNS5hWLm63+ZyHmhq0CuiU1kqV6NxY8sHXEZa9uIB4IHQf/kHZNWLRYiiiwbN3agZBSn273snt01RGS/B4P4XKxNXO4kOMTqtmWnF7Ibp9FCaEJ65uN00xBiRF7mT3aVe/R2wCHVtjq3a3Bnt6koZE3eeHAXhTILLcycdGE/rul9doCLRrFziD4vVjbvQSl/9fjFsZwqeGPZ2G6ABBVSj0hVIAVtr094ZPhzT0NB+fFUZYdeJH2+8YkS/LItH4sv7D/YxtN1AzEhsgteGT3UqaE9Pr7VbrGXIKYUPhKktNUq0eB0nEjSBwwwBUnD1UelvBCdDX9sfbulujT7F21hgAB1xKqUMNT94wIsHMaAIHowqcbqieRKvve1/Y/yjhsAMndtH/nSwpy3Z5CcBHdDcKzp5Cn07K9407pP2tuvc5CnvQNOgC/CLnRK5nV2vtEWaseQX6rCROzrz4QRIxH9uWbKOjSbokhbcAzsjsAwUG+6irKnUxPla4Il0kWaHkNrOQJypW0Esf9byZOKk05vh4mBHPLs9o5R3+QkUfWLxbRIddEatBpdNWsLD/WOi/D0LWpMU/wcHQdER2g7k/FTNKQ/oWGyuP22+bmn0GeVvL9aKUyilzFt+GOC4vdWBL2mynO706zVOGE12pn4fhcK5G6Od6AOg=,iv:vyz/NY+Ax1ntTDq1TdJyC5NffYggRtF6wPgS70w1328=,tag:5MvViig6aNTO/CBQRp1hlA==,type:str]",
+	"sops": {
+		"kms": null,
+		"gcp_kms": null,
+		"azure_kv": null,
+		"hc_vault": null,
+		"age": [
+			{
+				"recipient": "age1322uu60fpjzgjktx7uaqmafy5tq99j7d3qkrvhm0un4dqtlmly7s9cn0ft",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVZmNURUYvUVRQaThlamt1\ndzlBQkZkTjJyakdGeGdaTVpoN2tvcHc0RUR3CkhMa3VJWUpWeWc0V3hudEJjRGcv\nQ1d3RHdXMXhxVE9BOVBTRWszcERoSVEKLS0tIGthMG9CUnVHS2xOVWlpVmRPSWdT\nMWxvSk1qWjhUWmJObENNM2JsbDJRV00K7YaO1v8qEQ2ZWa72ZbMrfAPY2RgFKrVK\n/6fcsLYFByUrI4WjEYm3cT4hWx+s4chLVwN36P9XV5Y2GJW1o2HMAw==\n-----END AGE ENCRYPTED FILE-----\n"
+			},
+			{
+				"recipient": "age1jq3c2zcfwrl8pa9ng72jv0gqtd25u338vmqmxp4e67ma69xhaqssezzu0e",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBVSUpnZzJZcWxlN3IvWitE\nL2ZYcHMycVJqTnRqT2FZNmpBbVp6ZTYvMldVCmYwKzcveDJNS293L3VZcGEvZ2h6\nN2ZDbGF2cmNvekNDU0sxZDdFUUdPdjQKLS0tIC8rVVVJR0VzZFNQOVBIbU9XQmNx\nN090WU1jWVVza1IwR0RLL210dWliSDgKEne9pHdhM1DCNR7pB5nGaqp4hB8zeuHZ\nLWsHDqccJpzTSCv6smpckDy1TNdyySwt9VU9Yzk9z9mPt/12xrJZkw==\n-----END AGE ENCRYPTED FILE-----\n"
+			},
+			{
+				"recipient": "age1w9p2n3k5vs509kcvqwlgve6egagtsd0q7uqv87v4a02hyechv96qf3pa8f",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBUNFJnaFRBN1A0YnF1MDZn\nRVN2N2VBYWRGZUZRK3FCa2MyUk9VZ3RIZ1RzCld5SVNoZWNCRWJ1MjRGNmRZcjBy\nWXJhbHVJNjJNL01lTE1TWEcyZG5EKzAKLS0tIElnUHY2ak8zdzN4QnlmV1Y0b3BY\nMlBGa3RsN1pPVUJ3eFVYUURwbnFyRTAKf+OBqSqTZr9ZBShQkPNskOuRaMTGIqCJ\nE5oT+lJWx3kl+fQ/7u9/+RZfxPHNTKquA7D64Kdc9qMWUr2eYL4Wxg==\n-----END AGE ENCRYPTED FILE-----\n"
+			},
+			{
+				"recipient": "age14fg0xkd6js7c8lcvs3gmwx5plg6c6q00258j6x49a7apu5zxa4zq9cxcrf",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBOQnlRNEpxTDBnUDNWRnoy\nUHI5QmwzblZQVTY2ZEhSa3dIZWFoYU8rRHo4ClUxcG90S3NlQUJJNXR3Q2s1Vkp4\nejJTOXd1cGxJQ2tmaHdqUkQvTldtMEEKLS0tIGpGQ0RManhSMWRKelM1aEJRSVZH\nbUxrYjRPa2M0cmNtcG05QW1mNkh0cHMKh/1Dyqnop2YGngwqGd+PIFy9JSdIdTUL\nigMyDl4nMF8yafLvwAYzqqgSrlN8M2vJo7uiJhgnU+FB37K2ffBuPg==\n-----END AGE ENCRYPTED FILE-----\n"
+			},
+			{
+				"recipient": "age1prh6k3s0ljpvr99xrefk952cuq2crdzzvf9sprp7l5k7f62had7szqzrdt",
+				"enc": "-----BEGIN AGE ENCRYPTED FILE-----\nYWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBuaEhZOUFJZHU4dmx0NFlT\nRVYxZHJtSlFTN3Q1amJmaGs0SmY2Mk81TFRrCmJxR05QbUl6QXNUMkdWdkVGQnkw\nWm1YS2M0VHFnQkxCalVFV1lZZkI3eUkKLS0tIEtHMXpUOWk5bXQ3YVZJT2hDamdk\nbHlHbk5qYkFBMEdVL0x4L00rSVM3eXcKPauhgelGU5Trdx9dOEBNAIZG4UU+tBkb\nERzH6CPHy2cwzO7iTbIAWJTWM7+DNSU+ZVH84nJVWbb81jDveNqoJw==\n-----END AGE ENCRYPTED FILE-----\n"
+			}
+		],
+		"lastmodified": "2025-03-06T15:00:55Z",
+		"mac": "ENC[AES256_GCM,data:9PX3hECIJabKCvpLK8iGhqQ9tNpeceqq4cMScpABVS0M9JdQ3EB4t2sq0//04mYQS5vFgCZKzUb/0UCJBmEK+vsHplw4w1yDcGniD6XG/9mC9uJqkPB0QRBy5oJxJzPzcXUamP3b0WYTP55eRjOf1/C8D1G1Uqil2M4/cka0bpY=,iv:wFkbmgHLI0t+v38dCo4Z4vUzfZ9sm/Geh2KWkwd/lBU=,tag:9XoIQPln7i4vDtkQLoovzQ==,type:str]",
+		"pgp": null,
+		"unencrypted_suffix": "_unencrypted",
+		"version": "3.9.4"
+	}
+}

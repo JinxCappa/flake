@@ -1,0 +1,6 @@
+*.asc filter=sops
+crypt.toml filter=sops
+vector.toml filter=sops
+init.sh filter=sops
+docker-compose.nix filter=sops
+docker-compose.yaml filter=sops

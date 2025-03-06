@@ -1,0 +1,71 @@
+name: vector
+on:
+  push:
+    paths:
+      - packages/vector/default.nix
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ghcr.io/${{ github.repository }}
+jobs:
+  build:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - macos-latest
+          - macos-13
+    permissions:
+      contents: write
+      actions: write
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4.2.2
+
+      - name: Install current Bash on macOS
+        if: runner.os == 'macOS'
+        run: |
+          command -v brew && brew install bash || true
+
+      - uses: nixbuild/nix-quick-install-action@v30
+
+      - name: Install Attic
+        run: |
+          if ! command -v attic &> /dev/null; then
+            ./.github/install-attic-ci.sh
+          fi
+
+      - name: Configure Attic
+        continue-on-error: true
+        run: |
+          export PATH=$HOME/.nix-profile/bin:$PATH
+          attic login --set-default ci "$ATTIC_SERVER" "$ATTIC_TOKEN"
+          attic use "$ATTIC_CACHE"
+          if [ -n "$ATTIC_TOKEN" ]; then
+            echo ATTIC_CACHE=$ATTIC_CACHE >>$GITHUB_ENV
+          fi
+        env:
+          ATTIC_SERVER: ${{ secrets.ATTIC_SERVER }}
+          ATTIC_CACHE: ${{ secrets.ATTIC_CACHE }}
+          ATTIC_TOKEN: ${{ secrets.ATTIC_TOKEN }}
+
+      - name: Restore and save Nix store - ${{ matrix.os }}
+        uses: nix-community/cache-nix-action@v6
+        with:
+          # save a new cache every time `vector.yaml` changes
+          primary-key: vector-${{ matrix.os }}-${{ hashFiles('.github/workflows/vector.yaml') }}
+          # do purge caches
+          purge: true
+          # purge all versions of the cache
+          purge-prefixes: vector-${{ matrix.os }}-
+          # created more than 0 seconds ago relative to the start of the `Post Restore` phase
+          purge-created: 0
+          # except the version with the `primary-key`, if it exists
+          purge-primary-key: never
+          # and collect garbage in the Nix store until it reaches this size in bytes
+          gc-max-store-size: 0
+
+      # TODO: Abstract all of this out, and use `attic push --stdin` (requires #232)
+      - name: Build packages
+        run: |
+          export PATH=$HOME/.nix-profile/bin:$PATH
+          nix build --no-link --print-out-paths -L --fallback .#vector | xargs -I {} attic push "ci:$ATTIC_CACHE" {};

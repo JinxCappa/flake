@@ -1,0 +1,20 @@
+keys:
+  - &jinx age1322uu60fpjzgjktx7uaqmafy5tq99j7d3qkrvhm0un4dqtlmly7s9cn0ft
+  - &housing age1jq3c2zcfwrl8pa9ng72jv0gqtd25u338vmqmxp4e67ma69xhaqssezzu0e
+  - &aulmon age1w9p2n3k5vs509kcvqwlgve6egagtsd0q7uqv87v4a02hyechv96qf3pa8f
+  - &omni age14fg0xkd6js7c8lcvs3gmwx5plg6c6q00258j6x49a7apu5zxa4zq9cxcrf
+  - &plex age1prh6k3s0ljpvr99xrefk952cuq2crdzzvf9sprp7l5k7f62had7szqzrdt
+creation_rules:
+  - path_regex: crypt.toml
+    key_groups:
+      - age:
+          - *jinx
+          - *housing
+  - path_regex: .*.$
+    key_groups:
+      - age:
+          - *jinx
+          - *housing
+          - *aulmon
+          - *omni
+          - *plex
