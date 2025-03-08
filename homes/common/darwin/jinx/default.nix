@@ -33,6 +33,7 @@
   home.packages = with pkgs; [
     oh-my-zsh
     starship
+    krew
   ];
 
   home.file.".oh-my-zsh/custom/custom.zsh".text = ''
@@ -54,6 +55,7 @@
         zstyle ':omz:update' mode reminder
         eval "$(starship init zsh)"
         eval "$(devbox global shellenv)"
+        export PATH="$HOME/.krew/bin:$PATH"
         export ZSH_CUSTOM=~/.oh-my-zsh/custom
       '';
     };
