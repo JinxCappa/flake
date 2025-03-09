@@ -30,15 +30,6 @@ in
 
   nix.settings.trusted-users = [ "jinx" ];
 
-  environment.systemPackages = with pkgs; [
-    git
-    htop
-    direnv
-    ssh-to-age
-    sops
-    age
-  ];
-
   nix.settings.substituters = toml.nix.substituters;
 
   nix.settings.trusted-public-keys = toml.nix.trusted-public-keys;

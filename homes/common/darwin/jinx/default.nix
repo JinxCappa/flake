@@ -34,6 +34,22 @@
     oh-my-zsh
     starship
     krew
+    git
+    htop
+    direnv
+    ssh-to-age
+    sops
+    age
+    cilium-cli
+    kubernetes-helm
+    kubectl
+    fd
+    broot
+    nixos-anywhere
+    deploy-rs
+    devbox
+    ripgrep
+    compose2nix
   ];
 
   home.file.".oh-my-zsh/custom/custom.zsh".text = ''
