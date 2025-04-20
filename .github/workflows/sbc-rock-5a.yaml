@@ -1,0 +1,26 @@
+name: SBC Rock 5A image
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - lib/sbc/armbian-rockchip64.nix
+      - systems/aarch64-linux/rock-5a/**
+      - modules/nixos/bootstrap-console/**
+      - modules/nixos/sbc-bootstrap/**
+      - .github/workflows/_sbc-image-build.yaml
+      - .github/workflows/sbc-rock-5a.yaml
+      - flake.lock
+      - flake.nix
+
+jobs:
+  build:
+    name: Build Rock 5A
+    permissions:
+      contents: read
+    uses: ./.github/workflows/_sbc-image-build.yaml
+    with:
+      flake_attribute: rock-5a-bootstrap-image
+      artifact_name: sbc-rock-5a
