@@ -1,0 +1,26 @@
+name: SBC Rock Pi 4B+ image
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - lib/sbc/armbian-rockchip64.nix
+      - systems/aarch64-linux/rockpi-4b/**
+      - modules/nixos/bootstrap-console/**
+      - modules/nixos/sbc-bootstrap/**
+      - .github/workflows/_sbc-image-build.yaml
+      - .github/workflows/sbc-rockpi-4b.yaml
+      - flake.lock
+      - flake.nix
+
+jobs:
+  build:
+    name: Build Rock Pi 4B+
+    permissions:
+      contents: read
+    uses: ./.github/workflows/_sbc-image-build.yaml
+    with:
+      flake_attribute: rockpi-4b-bootstrap-image
+      artifact_name: sbc-rockpi-4b

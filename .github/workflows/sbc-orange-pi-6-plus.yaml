@@ -1,0 +1,26 @@
+name: SBC Orange Pi 6 Plus image
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - lib/sbc/armbian-cix-p1.nix
+      - systems/aarch64-linux/orange-pi-6-plus/**
+      - modules/nixos/bootstrap-console/**
+      - modules/nixos/sbc-bootstrap/**
+      - .github/workflows/_sbc-image-build.yaml
+      - .github/workflows/sbc-orange-pi-6-plus.yaml
+      - flake.lock
+      - flake.nix
+
+jobs:
+  build:
+    name: Build Orange Pi 6 Plus
+    permissions:
+      contents: read
+    uses: ./.github/workflows/_sbc-image-build.yaml
+    with:
+      flake_attribute: orange-pi-6-plus-bootstrap-image
+      artifact_name: sbc-orange-pi-6-plus

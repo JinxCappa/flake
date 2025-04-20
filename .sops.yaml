@@ -1,0 +1,90 @@
+# nix-shell -p ssh-to-age --run 'ssh-keyscan example.com | ssh-to-age'
+# nix-shell -p ssh-to-age --run 'cat /etc/ssh/ssh_host_ed25519_key.pub | ssh-to-age'
+keys:
+  # Users
+  - &jinx age1322uu60fpjzgjktx7uaqmafy5tq99j7d3qkrvhm0un4dqtlmly7s9cn0ft
+  - &housing age1jq3c2zcfwrl8pa9ng72jv0gqtd25u338vmqmxp4e67ma69xhaqssezzu0e
+  # Systems
+  - &access age15yr2sa989ts4h5e7rm5xmh9kvewzv67yvgmedv9ml8ngvh78yddqh6n3f2
+  - &db age1e8uvr8t7pqr8cauk6ul7s57fec0rtktte074x37y3jg369cjce5qpyle4q
+  - &dns-bench age1gh43pchrjfqwn6qvvzzf23465kxkh4690ftaly20kv6ys9rkl5pswpazwh
+  - &git age1ftl0q5cmkl67lw6ppgupn57dysl3j2ck0qnd4fyfef2rfz3cc3cq7s6jwg
+  - &github age175vcdm3yzccw9zljjrpu7zphndrhap8dxyeg6nkntktcuz9rhpfqrc94s5
+  - &identity age12zqapf75ehkdpzll42v8gvu8h7uvtuy626ckgtcqa9qwh30f037qew7d8n
+  - &monitor age13h5j39f45y0l5lxv67599c5p8grymqr39uxnf3mq2zmpemucg3eqw8n0kr
+  - &netbird age1eawr79xlzkwkl9u2w3eqmg5yck3m930f9c2eqqhxfqfe4g89zqzswcp80a
+  - &openbao age1kvvwfmfug7qn3kwc83d0janny5jeqle0et5pzmtkvl9a3e9x4vrqwd2tgx
+  - &omni age16kesud2s3s3mcf22ql342d950hxr583s4rvpajyxeh72wjvsvvmqfefdyy
+  - &plex age1prh6k3s0ljpvr99xrefk952cuq2crdzzvf9sprp7l5k7f62had7szqzrdt
+  - &rustdesk age150stk7kgsmmh35xrnjygufeswfq5qnjmt3jhnglmlvhgl98glfkqcmxnkr
+  - &saas age180f0hwa9nrg9l33fndj5fz5dccezm4nsvlnnl0t47pve6s4s3s6qkgwwcs
+creation_rules:
+  - path_regex: db/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *db
+  - path_regex: dns-bench/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *dns-bench
+  - path_regex: access/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *access
+  - path_regex: git/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *git
+  - path_regex: identity/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *identity
+  - path_regex: monitor/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *monitor
+  - path_regex: netbird/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *netbird
+  - path_regex: openbao/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *identity
+  - path_regex: saas/files/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *saas
+  - path_regex: openbao/files/crypt/demo/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *openbao
+  - path_regex: files/crypt/.*
+    key_groups:
+      - age:
+          - *jinx
+  - path_regex: ^secrets/crypt.toml
+    key_groups:
+      - age:
+          - *jinx
+          - *housing
+          - *github
+  - path_regex: ^secrets/.*
+    key_groups:
+      - age:
+          - *jinx
+          - *housing
+  - path_regex: ^mock/.*
+    key_groups:
+      - age:
+          - *jinx
