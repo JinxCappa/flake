@@ -1,0 +1,29 @@
+tcp:
+    serversTransports:
+        pp-v2:
+            proxyProtocol:
+                version: ENC[AES256_GCM,data:kA==,iv:7uay3SYLPDiG7OHFiwbCu8w3e9cBRKTBaQItyJZOw2U=,tag:qc+C9R76k1sB6GYbZy+z3A==,type:int]
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBqWHRBVW5Hc2tyTFlRc3Vo
+            T3YyTE4xVUxqS1ZFTFNncDFoalNxR0dKcXpNCm9jQnoyWjFkVEJBRzlrN3RCa0Jj
+            UmtjZDdxMlZabW1ZVTk1YlR5U2ZPdDQKLS0tIC94cXhYc3RYNnVZb0ZJd2NCaHFD
+            Wkk3Q2R3TXl6bk5YWU56OWVHTGx4a3cKyTw39xDQvzAz+oHzVcqkuIiMwz500qrN
+            eN/WiFNnJv+QOpYLYlx0xDme5dBdLUh4/nHaOXABpRcfEGLdthEOWA==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1322uu60fpjzgjktx7uaqmafy5tq99j7d3qkrvhm0un4dqtlmly7s9cn0ft
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSA2TFhzRDBHR0xtSzVNbUM5
+            T0ZCeC8zYjdmMURuenhiUDZaZ3R1U1BjNUhvCm9JUFpqbWtraEQrZ2kvVUxRem9Y
+            TUdJZXJBRGdKaHJ6ZmY0VFZuamkyRkEKLS0tIElOajhneG5vK29NTTlWdnN6elhJ
+            TWZqZXlnOVRGbDFtRDU1eExnc0ZFY2MK9pGATAkBZsMtpAFYZR7EBn8YIWkgc3wO
+            K2ncGUw1ynoj0RBGIMjVDUl2daLRRQLkt7QUAQQn41IihPIweNnvQQ==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1eawr79xlzkwkl9u2w3eqmg5yck3m930f9c2eqqhxfqfe4g89zqzswcp80a
+    lastmodified: "2026-08-29T18:55:52Z"
+    mac: ENC[AES256_GCM,data:K0EWMLBtn2CJz8RnQ4tTftBqhnibc23NX/EFBVniFuXv1I3ZohPfCKewYNgNNUg8twHXSzU0GEy2N1u6Jys4logSkInZrNclbU5tRfDjwJ+hC/bABsBZxNKatDTaPiRoI/NVQ+VrV/m4FR+BCi0b2T80WtJUnUTEjcPe43TJXnY=,iv:Yg2klmzKzQg7NZEm/J9iDy+8BEqMORy4kIarOvhU2XE=,tag:ChlyFvSE/WzazVQFM8rkhQ==,type:str]
+    unencrypted_suffix: _unencrypted
+    version: 3.13.3
