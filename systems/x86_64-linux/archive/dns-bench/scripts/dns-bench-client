@@ -1,0 +1,368 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+export LC_ALL=C
+
+usage() {
+  cat <<'EOF'
+Usage: dns-bench-client <VPS address>
+
+Environment variables:
+  DNS_SAMPLES       Number of sequential UDP and TCP queries (default: 50)
+  PING_COUNT        Number of ICMP echo requests (default: 50)
+  IPERF_SECONDS     Duration of each throughput test (default: 10)
+  IPERF_PARALLEL    Parallel TCP streams (default: 4)
+  IPERF_UDP_RATE    Offered UDP rate (default: 20M)
+
+When Nix is available, the script automatically runs itself in an ephemeral
+Nix shell containing its required tools. Otherwise these commands must already
+be installed: dig, iperf3, jq, mtr, ping (or ping6), awk, grep, sed, sort.
+
+The mtr route test may require elevated raw-socket permission on some systems.
+EOF
+}
+
+if [[ "$#" -ne 1 ]]; then
+  usage
+  exit 2
+fi
+
+VPS_ADDRESS=$1
+DNS_SAMPLES=${DNS_SAMPLES:-50}
+PING_COUNT=${PING_COUNT:-50}
+IPERF_SECONDS=${IPERF_SECONDS:-10}
+IPERF_PARALLEL=${IPERF_PARALLEL:-4}
+IPERF_UDP_RATE=${IPERF_UDP_RATE:-20M}
+
+# Re-execute once with ephemeral dependencies. Nix supplies mtr too, although
+# the operating system may still require elevated raw-socket permission.
+if [[ "${DNS_BENCH_IN_NIX_SHELL:-0}" != "1" ]] &&
+  command -v nix >/dev/null 2>&1; then
+  nix_packages=(
+    "nixpkgs#bind.dnsutils"
+    "nixpkgs#coreutils"
+    "nixpkgs#gawk"
+    "nixpkgs#gnugrep"
+    "nixpkgs#gnused"
+    "nixpkgs#iperf3"
+    "nixpkgs#jq"
+    "nixpkgs#mtr"
+  )
+
+  if [[ "$(uname -s)" == "Linux" ]]; then
+    nix_packages+=("nixpkgs#iputils")
+  fi
+
+  printf 'Nix detected; loading temporary benchmark tools...\n' >&2
+  export DNS_BENCH_IN_NIX_SHELL=1
+  exec nix \
+    --extra-experimental-features "nix-command flakes" \
+    shell \
+    "${nix_packages[@]}" \
+    --command "$0" "$@"
+fi
+
+PASS_COUNT=0
+WARN_COUNT=0
+FAIL_COUNT=0
+
+if [[ -t 1 ]]; then
+  GREEN=$'\033[32m'
+  YELLOW=$'\033[33m'
+  RED=$'\033[31m'
+  BLUE=$'\033[36m'
+  BOLD=$'\033[1m'
+  RESET=$'\033[0m'
+else
+  GREEN=""
+  YELLOW=""
+  RED=""
+  BLUE=""
+  BOLD=""
+  RESET=""
+fi
+
+section() {
+  printf '\n%s%s== %s ==%s\n' "$BOLD" "$BLUE" "$1" "$RESET"
+}
+
+pass() {
+  PASS_COUNT=$((PASS_COUNT + 1))
+  printf '%sPASS%s  %-28s %s\n' "$GREEN" "$RESET" "$1" "${2:-}"
+}
+
+warn() {
+  WARN_COUNT=$((WARN_COUNT + 1))
+  printf '%sWARN%s  %-28s %s\n' "$YELLOW" "$RESET" "$1" "${2:-}"
+}
+
+fail() {
+  FAIL_COUNT=$((FAIL_COUNT + 1))
+  printf '%sFAIL%s  %-28s %s\n' "$RED" "$RESET" "$1" "${2:-}"
+}
+
+info() {
+  printf 'INFO  %-28s %s\n' "$1" "${2:-}"
+}
+
+missing_commands=""
+for required_command in dig iperf3 jq mtr awk grep sed sort mktemp; do
+  if ! command -v "$required_command" >/dev/null 2>&1; then
+    missing_commands="$missing_commands $required_command"
+  fi
+done
+
+IP_VERSION=4
+PING_COMMAND=ping
+IPERF_IP_ARGS=()
+MTR_IP_ARGS=()
+if [[ "$VPS_ADDRESS" == *:* ]]; then
+  IP_VERSION=6
+  IPERF_IP_ARGS=(-6)
+  MTR_IP_ARGS=(-6)
+  if command -v ping6 >/dev/null 2>&1; then
+    PING_COMMAND=ping6
+  fi
+fi
+
+if ! command -v "$PING_COMMAND" >/dev/null 2>&1; then
+  missing_commands="$missing_commands $PING_COMMAND"
+fi
+
+if [[ -n "$missing_commands" ]]; then
+  printf 'Missing required commands:%s\n\n' "$missing_commands" >&2
+  if ! command -v nix >/dev/null 2>&1; then
+    printf 'Install Nix to let this script provide dependencies automatically.\n\n' >&2
+  fi
+  usage >&2
+  exit 2
+fi
+
+temporary_directory=$(mktemp -d /tmp/dns-bench-client.XXXXXX)
+trap 'rm -rf "$temporary_directory"' EXIT
+
+dns_latency_test() {
+  local transport=$1
+  local output_file="$temporary_directory/dns-$transport-ms.txt"
+  local failures=0
+  local index query_time stats
+  local dig_transport=()
+
+  if [[ "$transport" == "TCP" ]]; then
+    dig_transport=(+tcp)
+  fi
+
+  : >"$output_file"
+  index=1
+  while [[ "$index" -le "$DNS_SAMPLES" ]]; do
+    query_time=$(dig "@$VPS_ADDRESS" latency.test A \
+      "${dig_transport[@]}" \
+      +norecurse +tries=1 +time=2 +stats 2>/dev/null |
+      sed -n 's/^;; Query time: \([0-9][0-9]*\) msec$/\1/p' |
+      tail -n 1)
+
+    if [[ -n "$query_time" ]]; then
+      printf '%s\n' "$query_time" >>"$output_file"
+    else
+      failures=$((failures + 1))
+    fi
+    index=$((index + 1))
+  done
+
+  if [[ ! -s "$output_file" ]]; then
+    fail "$transport DNS latency" "all $DNS_SAMPLES queries failed"
+    return
+  fi
+
+  stats=$(sort -n "$output_file" |
+    awk '
+      {
+        values[NR] = $1
+        total += $1
+      }
+      END {
+        printf "avg=%.2fms p50=%dms p95=%dms p99=%dms",
+          total / NR,
+          values[int((NR - 1) * 0.50) + 1],
+          values[int((NR - 1) * 0.95) + 1],
+          values[int((NR - 1) * 0.99) + 1]
+      }
+    ')
+
+  if [[ "$failures" == "0" ]]; then
+    pass "$transport DNS latency" "$stats failures=0/$DNS_SAMPLES"
+  else
+    warn "$transport DNS latency" "$stats failures=$failures/$DNS_SAMPLES"
+  fi
+}
+
+iperf_tcp_test() {
+  local direction=$1
+  local output_file="$temporary_directory/iperf-$direction.json"
+  local reverse_args=()
+  local sent_mbps received_mbps retransmits
+
+  if [[ "$direction" == "download" ]]; then
+    reverse_args=(-R)
+  fi
+
+  if iperf3 "${IPERF_IP_ARGS[@]}" \
+    -c "$VPS_ADDRESS" \
+    "${reverse_args[@]}" \
+    -t "$IPERF_SECONDS" \
+    -P "$IPERF_PARALLEL" \
+    -J >"$output_file" 2>/dev/null; then
+    sent_mbps=$(jq -r '.end.sum_sent.bits_per_second / 1000000' "$output_file" |
+      awk '{ printf "%.2f", $1 }')
+    received_mbps=$(jq -r '.end.sum_received.bits_per_second / 1000000' "$output_file" |
+      awk '{ printf "%.2f", $1 }')
+    retransmits=$(jq -r '.end.sum_sent.retransmits // 0' "$output_file")
+    pass "TCP $direction" \
+      "sent=${sent_mbps}Mbps received=${received_mbps}Mbps retransmits=$retransmits"
+  else
+    fail "TCP $direction" "iperf3 connection or test failed"
+  fi
+}
+
+printf '%sDNS benchmark client report%s\n' "$BOLD" "$RESET"
+printf 'Generated: %s\n' "$(date '+%Y-%m-%dT%H:%M:%S%z')"
+info "VPS address" "$VPS_ADDRESS"
+info "IP version" "IPv$IP_VERSION"
+
+section "DNS correctness and safety"
+udp_answer=$(dig "@$VPS_ADDRESS" latency.test A \
+  +short +norecurse +tries=1 +time=2 |
+  tail -n 1)
+if [[ "$udp_answer" == "192.0.2.53" ]]; then
+  pass "UDP test record" "latency.test -> $udp_answer"
+else
+  fail "UDP test record" "expected 192.0.2.53, received ${udp_answer:-no answer}"
+fi
+
+tcp_answer=$(dig "@$VPS_ADDRESS" latency.test A \
+  +short +tcp +norecurse +tries=1 +time=2 |
+  tail -n 1)
+if [[ "$tcp_answer" == "192.0.2.53" ]]; then
+  pass "TCP test record" "latency.test -> $tcp_answer"
+else
+  fail "TCP test record" "expected 192.0.2.53, received ${tcp_answer:-no answer}"
+fi
+
+recursive_answer=$(dig "@$VPS_ADDRESS" example.com A \
+  +short +recurse +tries=1 +time=2 |
+  sed '/^[[:space:]]*$/d' |
+  head -n 1)
+if [[ -z "$recursive_answer" ]]; then
+  pass "public recursion" "disabled"
+else
+  fail "public recursion" "unexpected external answer: $recursive_answer"
+fi
+
+section "DNS latency"
+dns_latency_test UDP
+dns_latency_test TCP
+
+section "ICMP latency and packet loss"
+ping_output=$("$PING_COMMAND" -n -c "$PING_COUNT" "$VPS_ADDRESS" 2>&1 || true)
+packet_loss=$(printf '%s\n' "$ping_output" |
+  sed -n 's/.* \([0-9.]*\)% packet loss.*/\1/p' |
+  tail -n 1)
+round_trip=$(printf '%s\n' "$ping_output" |
+  sed -n 's/.*= \([^ ]*\) ms.*/\1/p' |
+  tail -n 1)
+
+if [[ -z "$packet_loss" ]]; then
+  fail "ICMP reachability" "no ping statistics returned"
+elif awk "BEGIN { exit !($packet_loss == 0) }"; then
+  pass "ICMP reachability" \
+    "loss=${packet_loss}% min/avg/max/deviation=${round_trip:-unknown} ms"
+elif awk "BEGIN { exit !($packet_loss < 10) }"; then
+  warn "ICMP reachability" \
+    "loss=${packet_loss}% min/avg/max/deviation=${round_trip:-unknown} ms"
+else
+  fail "ICMP reachability" \
+    "loss=${packet_loss}% min/avg/max/deviation=${round_trip:-unknown} ms"
+fi
+
+section "Network path"
+if command -v mtr >/dev/null 2>&1; then
+  mtr_binary=$(command -v mtr)
+  mtr_output=$("$mtr_binary" "${MTR_IP_ARGS[@]}" \
+    -n \
+    -r \
+    -c 20 \
+    "$VPS_ADDRESS" 2>&1)
+  mtr_status=$?
+
+  if [[ "$mtr_status" != "0" ]] &&
+    printf '%s\n' "$mtr_output" |
+      grep -Eqi 'permission|failure to open .*sockets' &&
+    command -v sudo >/dev/null 2>&1; then
+    info "mtr elevation" "raw sockets require sudo; your password may be requested"
+    mtr_output=$(sudo "$mtr_binary" "${MTR_IP_ARGS[@]}" \
+      -n \
+      -r \
+      -c 20 \
+      "$VPS_ADDRESS" 2>&1)
+    mtr_status=$?
+  fi
+
+  if [[ "$mtr_status" == "0" && -n "$mtr_output" ]]; then
+    printf '%s\n' "$mtr_output" | sed 's/^/  /'
+  else
+    if printf '%s\n' "$mtr_output" |
+      grep -Eqi 'permission|failure to open .*sockets'; then
+      warn "mtr route" "raw-socket permission denied"
+    else
+      warn "mtr route" "route test failed with status $mtr_status"
+    fi
+    if [[ -n "$mtr_output" ]]; then
+      printf '%s\n' "$mtr_output" | sed 's/^/  /'
+    fi
+  fi
+else
+  warn "mtr route" "mtr is not installed; route analysis skipped"
+fi
+
+section "TCP throughput"
+iperf_tcp_test upload
+iperf_tcp_test download
+
+section "UDP jitter and loss"
+udp_output="$temporary_directory/iperf-udp.json"
+if iperf3 "${IPERF_IP_ARGS[@]}" \
+  -c "$VPS_ADDRESS" \
+  -u \
+  -b "$IPERF_UDP_RATE" \
+  -t "$IPERF_SECONDS" \
+  -J >"$udp_output" 2>/dev/null; then
+  udp_mbps=$(jq -r '.end.sum.bits_per_second / 1000000' "$udp_output" |
+    awk '{ printf "%.2f", $1 }')
+  udp_jitter=$(jq -r '.end.sum.jitter_ms' "$udp_output" |
+    awk '{ printf "%.3f", $1 }')
+  udp_loss=$(jq -r '.end.sum.lost_percent' "$udp_output" |
+    awk '{ printf "%.3f", $1 }')
+
+  if awk "BEGIN { exit !($udp_loss == 0) }"; then
+    pass "UDP $IPERF_UDP_RATE" \
+      "received=${udp_mbps}Mbps jitter=${udp_jitter}ms loss=${udp_loss}%"
+  elif awk "BEGIN { exit !($udp_loss < 1) }"; then
+    warn "UDP $IPERF_UDP_RATE" \
+      "received=${udp_mbps}Mbps jitter=${udp_jitter}ms loss=${udp_loss}%"
+  else
+    fail "UDP $IPERF_UDP_RATE" \
+      "received=${udp_mbps}Mbps jitter=${udp_jitter}ms loss=${udp_loss}%"
+  fi
+else
+  fail "UDP $IPERF_UDP_RATE" "iperf3 connection or test failed"
+fi
+
+section "Summary"
+printf '%sPassed:%s %d  %sWarnings:%s %d  %sFailed:%s %d\n' \
+  "$GREEN" "$RESET" "$PASS_COUNT" \
+  "$YELLOW" "$RESET" "$WARN_COUNT" \
+  "$RED" "$RESET" "$FAIL_COUNT"
+
+if [[ "$FAIL_COUNT" -gt 0 ]]; then
+  exit 1
+fi

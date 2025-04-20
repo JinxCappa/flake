@@ -1,0 +1,7 @@
+#!ipxe
+
+set base-url ${cwduri}
+
+kernel ${base-url}/vmlinuz-lts initrd=initramfs-lts ip=dhcp kexec_load_disabled=0 modules=loop,squashfs,sd-mod,usb-storage quiet nomodeset alpine_repo=https://dl-cdn.alpinelinux.org/alpine/v@ALPINE_VERSION@/main modloop=${base-url}/modloop-lts apkovl=${base-url}/bootstrap.apkovl.tar.gz
+initrd ${base-url}/initramfs-lts
+boot
