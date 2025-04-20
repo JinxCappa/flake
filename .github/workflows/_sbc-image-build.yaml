@@ -1,0 +1,77 @@
+name: Build SBC image
+
+on:
+  workflow_call:
+    inputs:
+      flake_attribute:
+        description: Flake package containing one compressed SBC image
+        required: true
+        type: string
+      artifact_name:
+        description: Name of the uploaded GitHub artifact
+        required: true
+        type: string
+      runner:
+        description: ARM64 runner used to build the image
+        required: false
+        type: string
+        default: ubuntu-24.04-arm
+      timeout_minutes:
+        description: Maximum build duration
+        required: false
+        type: number
+        default: 180
+      retention_days:
+        description: Artifact retention period
+        required: false
+        type: number
+        default: 14
+
+jobs:
+  build:
+    runs-on: ${{ inputs.runner }}
+    timeout-minutes: ${{ inputs.timeout_minutes }}
+    permissions:
+      contents: read
+    env:
+      FLAKE_ATTRIBUTE: ${{ inputs.flake_attribute }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v22
+        with:
+          determinate: false
+
+      - name: Build and collect image
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          nix build ".#$FLAKE_ATTRIBUTE" --out-link result-sbc-image
+
+          shopt -s nullglob
+          images=(result-sbc-image/sd-image/*.img.zst)
+          if (( ${#images[@]} != 1 )); then
+            echo "Expected exactly one compressed SBC image" >&2
+            exit 1
+          fi
+
+          mkdir artifacts
+          image="${images[0]}"
+          filename="$(basename "$image")"
+          cp -L "$image" "artifacts/$filename"
+
+          (
+            cd artifacts
+            sha256sum "$filename" > "$filename.sha256"
+          )
+
+      - name: Upload image
+        uses: actions/upload-artifact@v6
+        with:
+          name: ${{ inputs.artifact_name }}
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: ${{ inputs.retention_days }}
+          compression-level: 0
