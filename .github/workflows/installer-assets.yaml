@@ -1,0 +1,135 @@
+name: Installer assets
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - bootstrap/**
+      - modules/nixos/bootstrap-console/**
+      - systems/x86_64-linux/_installer-base.nix
+      - systems/x86_64-linux/installer-iso/**
+      - systems/x86_64-linux/installer-netboot/**
+      - .github/workflows/installer-assets.yaml
+      - flake.lock
+      - flake.nix
+  pull_request:
+    branches:
+      - main
+    paths:
+      - bootstrap/**
+      - modules/nixos/bootstrap-console/**
+      - systems/x86_64-linux/_installer-base.nix
+      - systems/x86_64-linux/installer-iso/**
+      - systems/x86_64-linux/installer-netboot/**
+      - .github/workflows/installer-assets.yaml
+      - flake.lock
+      - flake.nix
+
+jobs:
+  nixos:
+    name: NixOS ISO and netboot
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    permissions:
+      contents: read
+    env:
+      CELLAR_SERVER: ${{ secrets.CELLAR_SERVER }}
+      CELLAR_TOKEN: ${{ secrets.CELLAR_TOKEN }}
+      CELLAR_CACHE_ID: ${{ secrets.CELLAR_CACHE_ID }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install Nix
+        uses: DeterminateSystems/nix-installer-action@v22
+        with:
+          determinate: false
+
+      - name: Install cellarctl
+        if: ${{ env.CELLAR_TOKEN != '' }}
+        uses: jinxcappa/cellar-action@v1
+        with:
+          configure-nix: "true"
+
+      - name: Build and cache NixOS assets
+        if: ${{ env.CELLAR_TOKEN != '' }}
+        run: |
+          cellarctl push --flake .#installer-iso
+          cellarctl push --flake .#installer-netboot
+
+      - name: Collect NixOS assets
+        run: |
+          nix build .#installer-iso --out-link result-installer-iso
+          nix build .#installer-netboot --out-link result-installer-netboot
+
+          mkdir -p artifacts/nixos/iso artifacts/nixos/netboot
+          cp -aL result-installer-iso/iso/. artifacts/nixos/iso/
+          cp -aL result-installer-netboot/. artifacts/nixos/netboot/
+
+      - name: Upload NixOS installer ISO
+        uses: actions/upload-artifact@v6
+        with:
+          name: nixos-installer-iso
+          path: artifacts/nixos/iso/
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload NixOS netboot bundle
+        uses: actions/upload-artifact@v6
+        with:
+          name: nixos-installer-netboot
+          path: artifacts/nixos/netboot/
+          if-no-files-found: error
+          retention-days: 14
+
+  alpine:
+    name: Alpine ISO and netboot
+    runs-on: ubuntu-24.04
+    timeout-minutes: 180
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Build Alpine image builder
+        uses: docker/build-push-action@v7
+        with:
+          context: bootstrap
+          file: bootstrap/alpine/Dockerfile
+          platforms: linux/amd64
+          load: true
+          tags: bootstrap-alpine-builder:ci
+          cache-from: type=gha,scope=bootstrap-alpine
+          cache-to: type=gha,mode=max,scope=bootstrap-alpine
+
+      - name: Build and collect Alpine assets
+        run: |
+          cid="$(docker create --platform linux/amd64 bootstrap-alpine-builder:ci)"
+          cleanup() {
+            docker rm -f "$cid" >/dev/null 2>&1 || true
+          }
+          trap cleanup EXIT
+
+          docker start -a "$cid"
+          mkdir -p artifacts/alpine
+          docker cp "$cid:/export/." artifacts/alpine/
+
+      - name: Upload Alpine installer ISO
+        uses: actions/upload-artifact@v6
+        with:
+          name: alpine-installer-iso
+          path: artifacts/alpine/*.iso*
+          if-no-files-found: error
+          retention-days: 14
+
+      - name: Upload Alpine netboot bundle
+        uses: actions/upload-artifact@v6
+        with:
+          name: alpine-installer-netboot
+          path: artifacts/alpine/ipxe/
+          if-no-files-found: error
+          retention-days: 14
