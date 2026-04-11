@@ -1,0 +1,42 @@
+systems/aarch64-darwin/Jinxs-Mac-mini/default.nix
+  bd968b8f944cf3fd 118-120
+systems/x86_64-linux/access/default.nix
+  be579cad65e22984 27,79-80
+flake.nix
+  bd968b8f944cf3fd 57
+systems/x86_64-linux/access/files/crypt/netbird.nix
+  be579cad65e22984 2-3,8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "34e236751d3274e2d0ad0f73ec3ee61926568083",
+  "prompts": {
+    "bd968b8f944cf3fd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a2ab207-50bb-4e46-a06c-ded1138d2b93",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "JinxCappa",
+      "messages": [],
+      "total_additions": 4,
+      "total_deletions": 8,
+      "accepted_lines": 4,
+      "overriden_lines": 0
+    },
+    "be579cad65e22984": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "026744d4-65eb-4df8-ae79-b0549dffea3c",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "JinxCappa",
+      "messages": [],
+      "total_additions": 330,
+      "total_deletions": 124,
+      "accepted_lines": 6,
+      "overriden_lines": 0
+    }
+  }
+}
