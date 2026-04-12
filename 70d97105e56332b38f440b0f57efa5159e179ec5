@@ -1,0 +1,57 @@
+systems/aarch64-darwin/Jinxs-Mac-mini/default.nix
+  bd968b8f944cf3fd 119,121
+  f8f12d31d04e0cbd 120,137-139
+flake.nix
+  f8f12d31d04e0cbd 52
+  bd968b8f944cf3fd 57
+systems/x86_64-linux/access/files/crypt/netbird.nix
+  be579cad65e22984 2-3,8,13
+systems/x86_64-linux/access/default.nix
+  be579cad65e22984 27,79-80
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "70d97105e56332b38f440b0f57efa5159e179ec5",
+  "prompts": {
+    "bd968b8f944cf3fd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a2ab207-50bb-4e46-a06c-ded1138d2b93",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "JinxCappa",
+      "messages": [],
+      "total_additions": 4,
+      "total_deletions": 8,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "be579cad65e22984": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "026744d4-65eb-4df8-ae79-b0549dffea3c",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "JinxCappa",
+      "messages": [],
+      "total_additions": 331,
+      "total_deletions": 125,
+      "accepted_lines": 129,
+      "overriden_lines": 0
+    },
+    "f8f12d31d04e0cbd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6ae20e49-13cc-4fda-96dc-5862a3ccee2c",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": null,
+      "messages": [],
+      "total_additions": 7,
+      "total_deletions": 5,
+      "accepted_lines": 5,
+      "overriden_lines": 0
+    }
+  }
+}
