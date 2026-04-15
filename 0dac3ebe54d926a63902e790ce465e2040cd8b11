@@ -1,0 +1,78 @@
+systems/x86_64-linux/saas/files/crypt/traefik.nix
+  741b8f7a8b2980ee 1-14
+.gitattributes
+  f8f12d31d04e0cbd 1
+.sops.yaml
+  f8f12d31d04e0cbd 16
+systems/x86_64-linux/saas/files/crypt/ui.nix
+  f8f12d31d04e0cbd 7,14
+  741b8f7a8b2980ee 1-6,8-13
+systems/x86_64-linux/netbird/default.nix
+  f8f12d31d04e0cbd 77
+systems/x86_64-linux/saas/files/crypt/docker.nix
+  741b8f7a8b2980ee 3,5-6
+  f8f12d31d04e0cbd 1-2,4,7-13
+flake.nix
+  bd968b8f944cf3fd 57
+  f8f12d31d04e0cbd 52
+systems/aarch64-darwin/Jinxs-Mac-mini/default.nix
+  bd968b8f944cf3fd 120,122
+  f8f12d31d04e0cbd 121,138-140
+scripts/nixos-install.sh
+  f8f12d31d04e0cbd 100-129
+systems/x86_64-linux/saas/files/crypt/omni.nix
+  741b8f7a8b2980ee 2-14
+systems/x86_64-linux/saas/files/crypt/dex.nix
+  741b8f7a8b2980ee 1-18
+systems/x86_64-linux/saas/default.nix
+  f8f12d31d04e0cbd 16
+  741b8f7a8b2980ee 28-35
+systems/x86_64-linux/netbird/files/crypt/netbird.nix
+  f8f12d31d04e0cbd 9-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.8",
+  "base_commit_sha": "0dac3ebe54d926a63902e790ce465e2040cd8b11",
+  "prompts": {
+    "741b8f7a8b2980ee": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d91a3-e707-70b3-bd53-bcf58b5e95e2",
+        "model": "gpt-5.4"
+      },
+      "human_author": null,
+      "messages": [],
+      "total_additions": 442,
+      "total_deletions": 89,
+      "accepted_lines": 394,
+      "overriden_lines": 0
+    },
+    "bd968b8f944cf3fd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a2ab207-50bb-4e46-a06c-ded1138d2b93",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "JinxCappa",
+      "messages": [],
+      "total_additions": 4,
+      "total_deletions": 8,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "f8f12d31d04e0cbd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6ae20e49-13cc-4fda-96dc-5862a3ccee2c",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": null,
+      "messages": [],
+      "total_additions": 635,
+      "total_deletions": 116,
+      "accepted_lines": 269,
+      "overriden_lines": 0
+    }
+  }
+}
