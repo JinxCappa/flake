@@ -1,0 +1,154 @@
+systems/x86_64-linux/saas/files/crypt/traefik.nix
+  741b8f7a8b2980ee 1-7,9-11,13-18
+  h_772d05b0e130f8 8,12
+scripts/git-sops.sh
+  977a65c321ad440b 20-21,65,69-70,72-81,127-129,137,184-186,199-253,302-309,355,358
+  ec1bbfe3990b8bed 26-33,87-122,131-135,171-183,187-195,283-293,297-301,310-319,321-354,356-357
+  ee8dd08b9a2f90e5 59-64,66-68,71,156-162,280-282,294-296,320
+flake.nix
+  f8f12d31d04e0cbd 52
+  bd968b8f944cf3fd 57
+systems/x86_64-linux/netbird/default.nix
+  f8f12d31d04e0cbd 77
+systems/x86_64-linux/saas/files/crypt/docker.nix
+  f8f12d31d04e0cbd 1-2,4,8-17
+  741b8f7a8b2980ee 3,5-6
+  a408af8c6c8cccee 7
+secrets/crypt.toml
+  h_772d05b0e130f8 9-10
+  977a65c321ad440b 1-8,11-14
+systems/x86_64-linux/saas/files/crypt/zitadel.nix
+  a408af8c6c8cccee 1-7,10-18
+  h_772d05b0e130f8 8-9
+scripts/nixos-install.sh
+  f8f12d31d04e0cbd 100-129
+.gitattributes
+  f8f12d31d04e0cbd 1
+systems/x86_64-linux/netbird/files/crypt/netbird.nix
+  f8f12d31d04e0cbd 10-18
+  h_30afaad5482ce1 7-8
+systems/x86_64-linux/saas/files/secrets.yaml
+  h_772d05b0e130f8 1-29
+systems/aarch64-darwin/Jinxs-Mac-mini/default.nix
+  bd968b8f944cf3fd 120,122
+  f8f12d31d04e0cbd 121,138-140
+systems/x86_64-linux/saas/files/crypt/dex.nix
+  741b8f7a8b2980ee 1-18
+systems/x86_64-linux/db/default.nix
+  h_772d05b0e130f8 149
+systems/x86_64-linux/saas/files/crypt/ui.nix
+  741b8f7a8b2980ee 1-9,12-14
+  f8f12d31d04e0cbd 15-17
+  h_772d05b0e130f8 10-11,18
+systems/x86_64-linux/saas/files/crypt/omni.nix
+  741b8f7a8b2980ee 2-11,13-17
+  h_772d05b0e130f8 12,18
+systems/x86_64-linux/saas/default.nix
+  f8f12d31d04e0cbd 16
+  741b8f7a8b2980ee 28-35
+  h_772d05b0e130f8 91,95-99
+systems/x86_64-linux/netbird/files/crypt/docker-compose.nix
+  h_772d05b0e130f8 2-11
+.sops.yaml
+  f8f12d31d04e0cbd 17
+  h_772d05b0e130f8 9-11,18,28,32-37,48
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "8a1b4205b67ecf95fb00d350f98df5f528b8e325",
+  "prompts": {
+    "741b8f7a8b2980ee": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d91a3-e707-70b3-bd53-bcf58b5e95e2",
+        "model": "gpt-5.4"
+      },
+      "human_author": null,
+      "total_additions": 481,
+      "total_deletions": 98,
+      "accepted_lines": 418,
+      "overriden_lines": 0
+    },
+    "977a65c321ad440b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "972e355b-44d8-4fa2-9242-cf80ccc183f7",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "total_additions": 156,
+      "total_deletions": 33,
+      "accepted_lines": 151,
+      "overriden_lines": 0
+    },
+    "a408af8c6c8cccee": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "362d4014-9409-45af-a8c5-fa4142b2bfef",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "total_additions": 193,
+      "total_deletions": 6,
+      "accepted_lines": 189,
+      "overriden_lines": 0
+    },
+    "bd968b8f944cf3fd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a2ab207-50bb-4e46-a06c-ded1138d2b93",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "JinxCappa",
+      "total_additions": 4,
+      "total_deletions": 8,
+      "accepted_lines": 3,
+      "overriden_lines": 0
+    },
+    "ec1bbfe3990b8bed": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6e3c7aec-f276-405d-9884-5526d0a035b5",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "total_additions": 139,
+      "total_deletions": 154,
+      "accepted_lines": 133,
+      "overriden_lines": 0
+    },
+    "ee8dd08b9a2f90e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b7f6b170-0f9e-4829-bec9-dc446436439b",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "total_additions": 30,
+      "total_deletions": 98,
+      "accepted_lines": 24,
+      "overriden_lines": 0
+    },
+    "f8f12d31d04e0cbd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6ae20e49-13cc-4fda-96dc-5862a3ccee2c",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": null,
+      "total_additions": 635,
+      "total_deletions": 116,
+      "accepted_lines": 272,
+      "overriden_lines": 0
+    }
+  },
+  "humans": {
+    "h_30afaad5482ce1": {
+      "author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "h_772d05b0e130f8": {
+      "author": "JinxCappa"
+    }
+  }
+}
