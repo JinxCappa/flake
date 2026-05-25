@@ -1,0 +1,15 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.1",
+  "base_commit_sha": "80b07ebc18ef92d2bd3c7490b1be5e30539f287a",
+  "prompts": {},
+  "humans": {
+    "h_30afaad5482ce1": {
+      "author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "h_772d05b0e130f8": {
+      "author": "JinxCappa"
+    }
+  }
+}
