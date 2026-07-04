@@ -1,0 +1,304 @@
+systems/x86_64-linux/netbird/files/crypt/docker-compose.nix
+  s_4dd1717c6999fd::t_d7fd9b31c0f0a3 1
+  s_4dd1717c6999fd::t_4703561d6cca9f 16
+  s_4dd1717c6999fd::t_05d76d540521b1 2-4,13-15
+  s_4dd1717c6999fd::t_f2ba862605fc75 17-18
+  s_4dd1717c6999fd::t_7c3b2565a10747 5-12
+systems/x86_64-linux/monitor/files/crypt/victoriametrics.nix
+  s_a6607f3fd425ce::t_187dddf221ee05 1-18
+systems/x86_64-linux/installer-netboot/default.nix
+  s_0ab3588915a456::t_f84eb31df6afcd 1-5,7-19
+  s_2c491f8d729f12::t_54b4280a2e668f 6
+systems/x86_64-linux/monitor/files/secret.yaml
+  h_30afaad5482ce1 1,7-11,13,16-20,22-23
+  s_52250892174e2c::t_34b10af15d6ea5 2-6,12,14-15,21,24-25
+systems/x86_64-linux/monitor/files/crypt/grafana.nix
+  s_c4fb467196cf52::t_dae3e2a8199539 1-17
+  s_c4fb467196cf52::t_342826955731de 18
+flake.lock
+  s_10e5fa397ea8a3::t_1291bc824a9df1 4-583
+  s_10e5fa397ea8a3::t_63e8099a2bbc11 587-588
+  s_10e5fa397ea8a3::t_66474ea2dc8a0f 1-3
+  s_10e5fa397ea8a3::t_d8c76d4e36558e 584-586
+.gitattributes
+  f8f12d31d04e0cbd 1-2
+systems/x86_64-linux/monitor/files/crypt/monitor.nix
+  s_52250892174e2c::t_696aaea26bb058 1,8
+  s_a6607f3fd425ce::t_187dddf221ee05 2-3,5-7,9
+  s_c4fb467196cf52::t_dae3e2a8199539 4
+  s_a6607f3fd425ce::t_12e1c2979bc379 10-12
+  s_c4fb467196cf52::t_4dc4bbd200ae5b 13-18
+systems/x86_64-linux/monitor/files/crypt/caddy.nix
+  s_a6607f3fd425ce::t_a88f4d41325c65 3
+  s_a6607f3fd425ce::t_7a2f9fcbd8a93b 13
+  s_a6607f3fd425ce::t_187dddf221ee05 1-2,4-12,14-16
+  s_a6607f3fd425ce::t_d2776c8f63f78e 17-18
+scripts/git-sops.sh
+  ec1bbfe3990b8bed 1-25,36-66,92-133,141-146,151-152,175-193,197-207,266-267,283-297,302,307-317,321-325,334-343,345-352,461-486,488-489
+  ee8dd08b9a2f90e5 69-74,76-78,81,166-174,280,304-306,318-320,344
+  977a65c321ad440b 30-31,75,79-80,82-91,137-139,147,194-196,209-263,271,301,326-333,487
+  s_2c491f8d729f12::t_20a75ed80954d1 362-382,438-444,448-452,490-491
+  s_2c491f8d729f12::t_eec545b5b1f0b0 29,32-35,67-68,134-136,140,148-150,153-165,208,264-265,268-270,298-300,303
+  s_2c491f8d729f12::t_2986a8c7c81e71 27-28,272,281-282,353-361,383-437,445-447,453-460,492
+systems/x86_64-linux/db/default.nix
+  h_772d05b0e130f8 149
+systems/x86_64-linux/installer-iso/default.nix
+  s_0ab3588915a456::t_538c30659406b5 1-5,7-17,19-21
+  s_0ab3588915a456::t_3fdf9920038fed 18
+  s_2c491f8d729f12::t_54b4280a2e668f 6
+systems/x86_64-linux/dev/default.nix
+  h_30afaad5482ce1 31-69,71
+systems/x86_64-linux/monitor/files/crypt/zabbix.nix
+  s_52250892174e2c::t_696aaea26bb058 1-17
+  s_52250892174e2c::t_26af4d23d5e9a9 18
+systems/x86_64-linux/monitor/files/crypt/Caddyfile
+  s_7b2c9ff4aded74::t_3580c7f28be75e 17
+  s_7b2c9ff4aded74::t_35590d09a8e7c3 16
+  s_7b2c9ff4aded74::t_c6c7d00a4b8968 1-12
+  s_7b2c9ff4aded74::t_985894f3b9d36c 13-15
+  s_7b2c9ff4aded74::t_02311c05d24727 18
+systems/x86_64-linux/saas/default.nix
+  f8f12d31d04e0cbd 1-16
+  741b8f7a8b2980ee 17-82,92-93,104-108
+  h_772d05b0e130f8 91,95-99
+systems/x86_64-linux/_installer-base.nix
+  s_0ab3588915a456::t_5ee2be8360a7bc 2-11,16-17,21-38,40-44,47-49,51-55,69-86,88
+  s_2c491f8d729f12::t_54b4280a2e668f 18-20
+  s_2c491f8d729f12::t_add9979dbbe118 56-68
+  s_29c73c03d45f99::t_c0493dadb0c46f 45
+  s_2c491f8d729f12::t_f1155d4a3acc02 1
+  h_30afaad5482ce1 87
+  s_2c491f8d729f12::t_5c2d52325f9643 12-15,39,46
+  s_2c491f8d729f12::t_2c191f2f531a4e 50
+scripts/nixos-install.sh
+  f8f12d31d04e0cbd 1-225
+justfile
+  s_29c73c03d45f99::t_265814dda9dd82 9,16-17
+  s_29c73c03d45f99::t_2a665e8040af40 1-5,10-15,18-28
+  s_3a4ae14b25c0f4::t_4a36ae21506f8a 6-8
+systems/aarch64-darwin/Jinxs-Mac-mini/default.nix
+  f8f12d31d04e0cbd 121,131-143
+  bd968b8f944cf3fd 27-120,122,144-146
+  bd968b8f944cf3fd 24-26
+flake.nix
+  s_0ab3588915a456::t_a4f0c61235b4f8 343-345
+  s_0ad283f421f493::t_dc5473dbf1df8b 9-12
+  s_0ab3588915a456::t_eb3961853c9684 335-337,339
+  f8f12d31d04e0cbd 5-7,13-57,62-81,354-355
+  s_0ad283f421f493::t_22210bd7fb84a5 8
+  s_3a4ae14b25c0f4::t_e85fea23ed4013 124-128
+  s_2c491f8d729f12::t_54b4280a2e668f 130-328,338
+  s_2c491f8d729f12::t_1b5666ce29f86e 1-4,58-59,61,82-123,129,329-334,346-353
+  s_0ab3588915a456::t_836ea00340b015 340-342
+  bd968b8f944cf3fd 60
+systems/x86_64-linux/saas/files/secrets.yaml
+  h_772d05b0e130f8 1-29
+systems/x86_64-linux/archive/monsrv/default.nix
+  s_52250892174e2c::t_5abca41e9a96ed 37,41-43
+  s_52250892174e2c::t_b05d49cde22556 38-40
+  s_52250892174e2c::t_051fa63a9c39dc 28-30
+  s_52250892174e2c::t_26e09cff926968 1-24
+  s_52250892174e2c::t_58d0ac99b76cfe 34-36
+  s_52250892174e2c::t_babe17553caf28 25-27
+  s_52250892174e2c::t_c3f84ee288b6ad 31-33
+  s_52250892174e2c::t_696aaea26bb058 44
+.sops.yaml
+  h_772d05b0e130f8 9,11,18,28,32-37,48
+  h_30afaad5482ce1 10,57
+  f8f12d31d04e0cbd 17
+modules/nixos/common/default.nix
+  s_2c491f8d729f12::t_def258b9da37c7 58,66-68
+  s_2c491f8d729f12::t_b862cedc708949 59-61
+  s_2c491f8d729f12::t_7c9507cb2b6917 27-29
+  s_3a4ae14b25c0f4::t_e85fea23ed4013 94-98
+  s_2c491f8d729f12::t_54b4280a2e668f 62
+  h_30afaad5482ce1 42
+  s_2c491f8d729f12::t_7154a60264b1a8 63-65
+  s_2c491f8d729f12::t_6778f2661c5b28 75-77
+  s_2c491f8d729f12::t_df7c17fbc59763 69-71
+  s_2c491f8d729f12::t_7ae15b36f08a27 30,72-74
+  s_2c491f8d729f12::t_3cee3091875392 1-26,31-41,43-57,78-93,99-127
+systems/x86_64-linux/netbird/default.nix
+  f8f12d31d04e0cbd 1-105
+systems/x86_64-linux/monitor/default.nix
+  h_30afaad5482ce1 25
+  s_a6607f3fd425ce::t_187dddf221ee05 37
+  s_c4fb467196cf52::t_ea91743ff0c5be 1-24,26-36
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "c19702a418ab58fed21b40753665e30646e14800",
+  "prompts": {
+    "741b8f7a8b2980ee": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019d91a3-e707-70b3-bd53-bcf58b5e95e2",
+        "model": "gpt-5.4"
+      },
+      "human_author": null,
+      "total_additions": 481,
+      "total_deletions": 98,
+      "accepted_lines": 73,
+      "overriden_lines": 0
+    },
+    "977a65c321ad440b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "972e355b-44d8-4fa2-9242-cf80ccc183f7",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "total_additions": 156,
+      "total_deletions": 33,
+      "accepted_lines": 88,
+      "overriden_lines": 0
+    },
+    "bd968b8f944cf3fd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "7a2ab207-50bb-4e46-a06c-ded1138d2b93",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "JinxCappa",
+      "total_additions": 4,
+      "total_deletions": 8,
+      "accepted_lines": 99,
+      "overriden_lines": 0
+    },
+    "ec1bbfe3990b8bed": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6e3c7aec-f276-405d-9884-5526d0a035b5",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "total_additions": 139,
+      "total_deletions": 154,
+      "accepted_lines": 216,
+      "overriden_lines": 0
+    },
+    "ee8dd08b9a2f90e5": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b7f6b170-0f9e-4829-bec9-dc446436439b",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": null,
+      "total_additions": 30,
+      "total_deletions": 98,
+      "accepted_lines": 27,
+      "overriden_lines": 0
+    },
+    "f8f12d31d04e0cbd": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6ae20e49-13cc-4fda-96dc-5862a3ccee2c",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": null,
+      "total_additions": 635,
+      "total_deletions": 116,
+      "accepted_lines": 433,
+      "overriden_lines": 0
+    }
+  },
+  "humans": {
+    "h_30afaad5482ce1": {
+      "author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "h_772d05b0e130f8": {
+      "author": "JinxCappa"
+    }
+  },
+  "sessions": {
+    "s_0ab3588915a456": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ca7032c-cf97-4d0e-ad27-b6220bbd3760",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    },
+    "s_0ad283f421f493": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f2336-c088-7f72-8698-ea67114a4812",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_10e5fa397ea8a3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eb239-f1c8-7552-bd92-deaa3c529147",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_29c73c03d45f99": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f1b05-0052-7021-882d-0ea3810079a6",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_2c491f8d729f12": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019efee4-3b3e-7840-8db5-1c91aeac9530",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_3a4ae14b25c0f4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f2372-356e-7f22-b82a-f20b183c8ae9",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_4dd1717c6999fd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ef651-9d96-7ae3-873a-e66946117b41",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_52250892174e2c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eaeb7-f9c6-7d02-843c-966d1a251672",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_7b2c9ff4aded74": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ebc87-c024-74f2-b106-e6a28af902cd",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_a6607f3fd425ce": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eb219-15df-7652-8e85-b7c88afd6389",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_c4fb467196cf52": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ecb49-73e8-7df0-a882-faf4967d7d49",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    }
+  }
+}
