@@ -1,0 +1,288 @@
+bootstrap/alpine/boot.ipxe
+  s_8449f3e034e69f::t_974363e1c14003 1-7
+systems/x86_64-linux/monitor/files/crypt/victoriametrics.nix
+  s_a6607f3fd425ce::t_187dddf221ee05 1-18
+bootstrap/alpine/Dockerfile
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-3,5-21,24-27,29-36
+  s_8449f3e034e69f::t_4107010db1efad 22-23
+  s_8449f3e034e69f::t_3cc7c71be0844b 4
+  s_8449f3e034e69f::t_974363e1c14003 28
+systems/x86_64-linux/monitor/files/secret.yaml
+  h_30afaad5482ce1 1,7-11,13,16-20,22-23
+  s_52250892174e2c::t_34b10af15d6ea5 2-6,12,14-15,21,24-25
+bootstrap/alpine/genapkovl-bootstrap.sh
+  s_8449f3e034e69f::t_bde40ef55496f6 86-105
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-85,106-131
+systems/x86_64-linux/monitor/default.nix
+  s_a6607f3fd425ce::t_187dddf221ee05 37
+  s_c4fb467196cf52::t_ea91743ff0c5be 1-24,26-36
+  h_30afaad5482ce1 25
+bootstrap/alpine/README.md
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-2,7-13,31-38
+  s_8449f3e034e69f::t_974363e1c14003 3-6,14-30
+systems/x86_64-linux/saas/default.nix
+  h_772d05b0e130f8 91,95-99
+systems/x86_64-linux/monitor/files/crypt/Caddyfile
+  s_7b2c9ff4aded74::t_3ce46f67d212a1 16
+  s_7b2c9ff4aded74::t_c6c7d00a4b8968 1-12
+  s_7b2c9ff4aded74::t_705badc15f45ec 17
+  s_7b2c9ff4aded74::t_09e1f1c62acd84 13-15
+  s_7b2c9ff4aded74::t_2bda425e41ae10 18
+systems/x86_64-linux/monitor/files/crypt/caddy.nix
+  s_a6607f3fd425ce::t_a88f4d41325c65 3
+  s_a6607f3fd425ce::t_187dddf221ee05 1-2,4-12,14-16
+  s_a6607f3fd425ce::t_7a2f9fcbd8a93b 13
+  s_a6607f3fd425ce::t_c4079f2b6e66ed 17-18
+systems/x86_64-linux/archive/monsrv/default.nix
+  s_52250892174e2c::t_696aaea26bb058 44
+  s_52250892174e2c::t_58d0ac99b76cfe 34-36
+  s_52250892174e2c::t_26e09cff926968 1-24
+  s_52250892174e2c::t_babe17553caf28 25-27
+  s_52250892174e2c::t_c3f84ee288b6ad 31-33
+  s_52250892174e2c::t_b05d49cde22556 38-40
+  s_52250892174e2c::t_5abca41e9a96ed 37,41-43
+  s_52250892174e2c::t_051fa63a9c39dc 28-30
+flake.lock
+  s_10e5fa397ea8a3::t_63e8099a2bbc11 549-550
+  s_10e5fa397ea8a3::t_66474ea2dc8a0f 1-3
+  s_10e5fa397ea8a3::t_1291bc824a9df1 4-545
+  s_10e5fa397ea8a3::t_d8c76d4e36558e 546-548
+bootstrap/alpine/build.sh
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-7,10-17,19,22-28
+  s_8449f3e034e69f::t_a00420b814dbb2 8-9,18
+  s_8449f3e034e69f::t_974363e1c14003 21,29-56
+  s_8449f3e034e69f::t_278699ad36c4bf 20
+flake.nix
+  s_3a4ae14b25c0f4::t_e85fea23ed4013 124-128
+  s_0ad283f421f493::t_60406d88ec28b2 13-16
+  s_2c491f8d729f12::t_54b4280a2e668f 130,143-338,348
+  s_0ad283f421f493::t_eca2ed929df300 40
+  s_9888e5ac2db143::t_28f5c91a3c0a25 45,56,99
+  s_9888e5ac2db143::t_00d17885d2ab96 5-7,42-44,52-55
+  s_9888e5ac2db143::t_16c904130067eb 87,132-142
+  s_0ad283f421f493::t_bedd3a0bd0eed8 19-22
+  s_2c491f8d729f12::t_1b5666ce29f86e 1-4,58-86,88-98,100-123,129,339-344,356-362
+  s_0ad283f421f493::t_e33317b05c2be2 25-28
+  s_0ad283f421f493::t_2f2044c2366a8a 47-49
+  s_0ad283f421f493::t_6f7c3dd23f4b52 31-33
+  s_0ab3588915a456::t_836ea00340b015 350-352
+  s_9888e5ac2db143::t_4802834db71bd5 131
+  s_0ab3588915a456::t_a4f0c61235b4f8 353-355
+  s_0ad283f421f493::t_dc5473dbf1df8b 9-12,17-18,23-24,29-30,34-35,39,41,46,50-51,57,363
+  s_0ab3588915a456::t_eb3961853c9684 345-347,349
+  s_0ad283f421f493::t_ed12e1dcb6de16 364
+  s_0ad283f421f493::t_36b3b6f3c99f11 36-38
+  s_0ad283f421f493::t_22210bd7fb84a5 8
+modules/nixos/common/default.nix
+  s_2c491f8d729f12::t_54b4280a2e668f 62
+  s_2c491f8d729f12::t_def258b9da37c7 58,66-68
+  s_2c491f8d729f12::t_7c9507cb2b6917 27-29
+  s_2c491f8d729f12::t_7ae15b36f08a27 30,72-74
+  s_2c491f8d729f12::t_7154a60264b1a8 63-65
+  s_2c491f8d729f12::t_b862cedc708949 59-61
+  s_3a4ae14b25c0f4::t_e85fea23ed4013 94-98
+  s_2c491f8d729f12::t_3cee3091875392 1-26,31-41,43-57,78-93,99-127
+  h_30afaad5482ce1 42
+  s_2c491f8d729f12::t_df7c17fbc59763 69-71
+  s_2c491f8d729f12::t_6778f2661c5b28 75-77
+systems/x86_64-linux/saas/files/secrets.yaml
+  h_772d05b0e130f8 1-29
+systems/x86_64-linux/dev/default.nix
+  h_30afaad5482ce1 31-69,71
+.sops.yaml
+  h_772d05b0e130f8 9,11,18,28,32-37,48
+  h_30afaad5482ce1 10,57
+systems/x86_64-linux/_installer-base.nix
+  s_2c491f8d729f12::t_add9979dbbe118 56-59,78-83
+  s_2c491f8d729f12::t_2c191f2f531a4e 50
+  s_2c491f8d729f12::t_f1155d4a3acc02 1
+  s_8449f3e034e69f::t_9794ea3e2921a3 12-15
+  s_2c491f8d729f12::t_54b4280a2e668f 18-20
+  s_2c491f8d729f12::t_5c2d52325f9643 39,46
+  s_8449f3e034e69f::t_80d33e38f3ef09 60-77
+  s_0ab3588915a456::t_5ee2be8360a7bc 2-11,16-17,21-38,40-44,47-49,51-55,84-101,103
+  h_30afaad5482ce1 102
+  s_29c73c03d45f99::t_c0493dadb0c46f 45
+justfile
+  s_29c73c03d45f99::t_2a665e8040af40 1-4,7,15-16,18-19,30-32,34-36,38-40
+  s_8449f3e034e69f::t_5ce2065f8ce673 5-6,41-49,51-57
+  s_3a4ae14b25c0f4::t_4a36ae21506f8a 8-10
+  s_8449f3e034e69f::t_e8d0d420919955 12-14,17,20-29
+  s_8449f3e034e69f::t_974363e1c14003 50
+  s_29c73c03d45f99::t_265814dda9dd82 11
+  s_8449f3e034e69f::t_4dd40673a22ee9 33,37,58-62
+systems/x86_64-linux/monitor/files/crypt/monitor.nix
+  s_52250892174e2c::t_696aaea26bb058 1,8
+  s_a6607f3fd425ce::t_187dddf221ee05 2-3,5-7,9
+  s_c4fb467196cf52::t_dae3e2a8199539 4
+  s_a6607f3fd425ce::t_461f998e833396 10-12
+  s_c4fb467196cf52::t_e0dc25d7d4a9d7 13-18
+scripts/git-sops.sh
+  s_2c491f8d729f12::t_6c2bbec214dcd1 342-349
+  s_2c491f8d729f12::t_a3ba4839e401ac 284-291
+  s_2c491f8d729f12::t_2986a8c7c81e71 13,18-19,27-28,271-283,292,308-309,315,324,335,340-341,350-351,353-361,383-437,445-447,453-460,492
+  s_2c491f8d729f12::t_eec545b5b1f0b0 29-270,298-303
+  s_2c491f8d729f12::t_fcfc7a3d3c8ac5 336-339
+  s_2c491f8d729f12::t_bc2d4ffc1930ae 14-17
+  s_2c491f8d729f12::t_33585bf98f9eea 461-489
+  s_2c491f8d729f12::t_5e12f174e1eee4 304-307
+  s_2c491f8d729f12::t_5015882025719b 352
+  s_2c491f8d729f12::t_c3de9cf13ddfd1 7-9
+  s_2c491f8d729f12::t_20a75ed80954d1 362-382,438-444,448-452,490-491
+  s_2c491f8d729f12::t_5f793b8c17ecfa 20-26
+  s_2c491f8d729f12::t_454f0f94054696 325-334
+  s_2c491f8d729f12::t_1cd3b6ea981588 293-297
+  s_2c491f8d729f12::t_be8f414ab32406 310-314
+  s_2c491f8d729f12::t_8dd2656db1a6c1 10-12
+  s_2c491f8d729f12::t_8ec2f7c9c199db 316-323
+  s_2c491f8d729f12::t_6bd584d4dc42e2 4-6
+systems/x86_64-linux/monitor/files/crypt/zabbix.nix
+  s_52250892174e2c::t_696aaea26bb058 1-17
+  s_52250892174e2c::t_8c3081b6a96b13 18
+.gitignore
+  s_8449f3e034e69f::t_4d1dbd62c9dd2f 1-3
+  s_8449f3e034e69f::t_4dd40673a22ee9 4
+systems/x86_64-linux/installer-iso/default.nix
+  s_0ab3588915a456::t_538c30659406b5 1-5,7-17,19-21
+  s_0ab3588915a456::t_3fdf9920038fed 18
+  s_2c491f8d729f12::t_54b4280a2e668f 6
+bootstrap/alpine/mkimg.bootstrap.sh
+  s_8449f3e034e69f::t_54eccfe72cc2e9 10
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-9,11-12
+systems/x86_64-linux/db/default.nix
+  h_772d05b0e130f8 149
+systems/x86_64-linux/installer-netboot/default.nix
+  s_2c491f8d729f12::t_54b4280a2e668f 6
+  s_0ab3588915a456::t_f84eb31df6afcd 1-5,7-19
+systems/x86_64-linux/netbird/files/crypt/docker-compose.nix
+  s_4dd1717c6999fd::t_d7fd9b31c0f0a3 1
+  s_4dd1717c6999fd::t_0e896b139b0f8d 16
+  s_4dd1717c6999fd::t_62924a91a74a50 2-4,13-15
+  s_4dd1717c6999fd::t_ad0d6c26fbafd6 17-18
+  s_4dd1717c6999fd::t_0cfbd39b52e791 5-12
+bootstrap/authorized_keys
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-2
+systems/x86_64-linux/monitor/files/crypt/grafana.nix
+  s_c4fb467196cf52::t_dae3e2a8199539 1-17
+  s_c4fb467196cf52::t_a7381ebf63a5ad 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.14",
+  "base_commit_sha": "e7e3a75618f498cb83f6b599cfdc7404b733e374",
+  "prompts": {},
+  "humans": {
+    "h_30afaad5482ce1": {
+      "author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "h_772d05b0e130f8": {
+      "author": "JinxCappa"
+    }
+  },
+  "sessions": {
+    "s_0ab3588915a456": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ca7032c-cf97-4d0e-ad27-b6220bbd3760",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    },
+    "s_0ad283f421f493": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f2336-c088-7f72-8698-ea67114a4812",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_10e5fa397ea8a3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eb239-f1c8-7552-bd92-deaa3c529147",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_29c73c03d45f99": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f1b05-0052-7021-882d-0ea3810079a6",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_2c491f8d729f12": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019efee4-3b3e-7840-8db5-1c91aeac9530",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_3a4ae14b25c0f4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f2372-356e-7f22-b82a-f20b183c8ae9",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_4dd1717c6999fd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ef651-9d96-7ae3-873a-e66946117b41",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_52250892174e2c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eaeb7-f9c6-7d02-843c-966d1a251672",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_7b2c9ff4aded74": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ebc87-c024-74f2-b106-e6a28af902cd",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_8449f3e034e69f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6ca0-a9ae-7540-a5f1-6ef79fda62ea",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_9888e5ac2db143": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f60ab-d02b-7853-8b69-e50d171abb82",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_a6607f3fd425ce": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eb219-15df-7652-8e85-b7c88afd6389",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_c4fb467196cf52": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ecb49-73e8-7df0-a882-faf4967d7d49",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    }
+  }
+}
