@@ -1,0 +1,881 @@
+systems/x86_64-linux/openbao/disko.nix
+  h_30afaad5482ce1 1-37
+homes/common/darwin/jinx/default.nix
+  h_30afaad5482ce1 1-101
+systems/x86_64-linux/archive/kuma/files/crypt/Caddyfile
+  h_30afaad5482ce1 1-8
+  h_30afaad5482ce1 9-14
+systems/x86_64-linux/archive/zitadel/disko.nix
+  h_30afaad5482ce1 1-37
+systems/aarch64-linux/ns01/default.nix
+  h_30afaad5482ce1 1-28
+homes/x86_64-linux/nixos@default/default.nix
+  h_30afaad5482ce1 1-57
+modules/nixos/common/default.nix
+  s_2c491f8d729f12::t_7ae15b36f08a27 31,85-87
+  s_2c491f8d729f12::t_df7c17fbc59763 75-77
+  s_2c491f8d729f12::t_7c9507cb2b6917 28-30
+  s_2c491f8d729f12::t_def258b9da37c7 64,72-74
+  s_2c491f8d729f12::t_7154a60264b1a8 69-71
+  s_a8747cece24f95::t_64fa338bfb8a99 78-81,83-84
+  s_a8747cece24f95::t_09d49a067494dd 82
+  s_2c491f8d729f12::t_54b4280a2e668f 68
+  s_2c491f8d729f12::t_3cee3091875392 1-11,14-27,32-42,44-56,63,94-109,115-118
+  s_a8747cece24f95::t_02db0d5d1113fd 12-13,57-62,88-91,112-113
+  s_2c491f8d729f12::t_b862cedc708949 65-67
+  s_3a4ae14b25c0f4::t_e85fea23ed4013 110-111,114
+  h_30afaad5482ce1 43
+  s_2c491f8d729f12::t_6778f2661c5b28 92-93
+systems/x86_64-linux/archive/monsrv/files/crypt/db-password
+  h_30afaad5482ce1 1
+  h_30afaad5482ce1 2-14
+systems/x86_64-linux/archive/rustdesk/files/crypt/docker-compose.nix
+  h_30afaad5482ce1 1-14
+README.md
+  s_bef73a89456734::t_12b54513df49f0 1
+  s_bef73a89456734::t_0a891220c48ed7 5-7
+  s_a8747cece24f95::t_46033d1a9334aa 3-4
+  s_bef73a89456734::t_a0329073d8a69f 2
+systems/x86_64-linux/netbird/default.nix
+  h_30afaad5482ce1 1-105
+systems/x86_64-linux/identity/files/crypt/zitadel.nix
+  s_b83482356f5360::t_f3ef5fac337d11 1-6
+  s_b83482356f5360::t_6c31e4ae41f850 7-9
+  s_b83482356f5360::t_53a92453334bc2 10-18
+bootstrap/alpine/mkimg.bootstrap.sh
+  s_a8747cece24f95::t_f746c7abd5b84d 11
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-9,15
+  s_8449f3e034e69f::t_54eccfe72cc2e9 10
+  s_a8747cece24f95::t_7fd4da29af31d3 12-14
+systems/aarch64-linux/rock-5a/assets.nix
+  s_a8747cece24f95::t_9b14abde6f8f07 1-7,9-33
+  s_a8747cece24f95::t_71b17b7a34e43e 8
+flake.lock
+  s_10e5fa397ea8a3::t_d8c76d4e36558e 564-566
+  s_10e5fa397ea8a3::t_66474ea2dc8a0f 1-20
+  s_10e5fa397ea8a3::t_1291bc824a9df1 21-563
+  s_10e5fa397ea8a3::t_63e8099a2bbc11 567-568
+bootstrap/alpine/Dockerfile
+  s_8449f3e034e69f::t_3cc7c71be0844b 4
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-3,5-21,24-27,29-36
+  s_8449f3e034e69f::t_4107010db1efad 22-23
+  s_8449f3e034e69f::t_974363e1c14003 28
+systems/x86_64-linux/access/hardware-configuration.nix
+  h_30afaad5482ce1 1-17
+systems/x86_64-linux/openbao/default.nix
+  h_30afaad5482ce1 1-78
+systems/x86_64-linux/git/files/license.key
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/dns-bench/hardware-configuration.nix
+  s_a7144b517d7c1b::t_d211076b973b7e 1-3
+  s_a7144b517d7c1b::t_205492c9edc252 4-24
+systems/x86_64-linux/monitor/files/crypt/monitor.nix
+  s_52250892174e2c::t_696aaea26bb058 1,8
+  s_a6607f3fd425ce::t_187dddf221ee05 2-3,5-7,9
+  s_c4fb467196cf52::t_dae3e2a8199539 4
+  s_a6607f3fd425ce::t_5b18daa0634517 10-12
+  s_c4fb467196cf52::t_9a996b1009746a 13-18
+bootstrap/alpine/boot.ipxe
+  s_8449f3e034e69f::t_974363e1c14003 1-4,6-7
+  s_a8747cece24f95::t_7fd4da29af31d3 5
+systems/x86_64-linux/archive/luks/hardware-configuration.nix
+  h_30afaad5482ce1 1-29
+homes/x86_64-darwin/jinx@Jinxs-Housing-Mac-mini/default.nix
+  h_30afaad5482ce1 1-5
+modules/nixos/bootstrap-console/default.nix
+  s_a8747cece24f95::t_c31b3a91bc4ab5 1-42,44,49-96
+  s_a8747cece24f95::t_6a8ce80b9fe472 43,45-48
+systems/x86_64-linux/git/default.nix
+  h_30afaad5482ce1 1-42,45-46,53-107
+  s_f2e4593363b114::t_465d4a6d11e94e 43-44,47-52,108
+systems/x86_64-linux/access/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/archive/luks/files/crypt/docker-compose.nix
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/saas/files/secrets.yaml
+  h_772d05b0e130f8 1-29
+systems/x86_64-linux/access/files/crypt/traefik.nix
+  s_e878dc0937f75b::t_0b8f2ebed70a59 1
+  s_e878dc0937f75b::t_8caaa4bf4e76a1 3
+  s_e878dc0937f75b::t_82a6fd2ffd1638 6-11
+  s_e878dc0937f75b::t_0e9834df9e70df 2
+  s_e878dc0937f75b::t_d7abe895c83d5c 4-5
+  s_e878dc0937f75b::t_c6e258aa96e041 12-14
+  s_e878dc0937f75b::t_120119b912eb26 15-18
+systems/x86_64-linux/identity/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/saas/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/monitor/files/secret.yaml
+  h_30afaad5482ce1 1,7-11,13,16-20,22-23
+  s_52250892174e2c::t_34b10af15d6ea5 2-6,12,14-15,21,24-25
+systems/x86_64-darwin/Jinxs-Housing-Mac-mini/default.nix
+  h_30afaad5482ce1 1-64
+systems/x86_64-linux/archive/headscale/files/crypt/headplane.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/pangolin/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/identity/hardware-configuration.nix
+  h_30afaad5482ce1 1-17
+systems/x86_64-linux/archive/headscale/files/crypt/Caddyfile
+  h_30afaad5482ce1 1-14
+systems/aarch64-linux/rockpi-4b/default.nix
+  s_a8747cece24f95::t_43a90e3ca8dffc 26-29
+  s_a8747cece24f95::t_38d6a87627ca46 21-23
+  s_a8747cece24f95::t_b362774a29fa6f 19-20
+  s_a8747cece24f95::t_9575e141975421 1-18,24-25,30-48
+systems/x86_64-linux/archive/luks/disko.nix
+  h_30afaad5482ce1 1-43
+systems/x86_64-linux/access/files/crypt/netbird.nix
+  s_e878dc0937f75b::t_f2a83551b0cff9 1-12
+  s_e878dc0937f75b::t_7a45b5a2e70300 13-15
+  h_30afaad5482ce1 16-18
+systems/x86_64-linux/monitor/files/crypt/Caddyfile
+  s_7b2c9ff4aded74::t_e1c2263c7ee0ec 16
+  s_7b2c9ff4aded74::t_3dd686217eefe3 17
+  s_7b2c9ff4aded74::t_c6c7d00a4b8968 1-12
+  s_7b2c9ff4aded74::t_916a8221d70ee8 13-15
+  s_7b2c9ff4aded74::t_98c2d7765b4513 18
+justfile
+  s_29c73c03d45f99::t_2a665e8040af40 1-4,8,17,19,31-33,35-37,39-41
+  s_a8747cece24f95::t_8ed45b4fae7b18 57
+  s_a8747cece24f95::t_895a2d676b46a2 44-45
+  s_3a4ae14b25c0f4::t_4a36ae21506f8a 9-11
+  s_8449f3e034e69f::t_e8d0d420919955 13-15,18,21,23-25
+  s_8449f3e034e69f::t_5ce2065f8ce673 6-7,58-60,62,64-65,67-69,71-73
+  s_a8747cece24f95::t_6adb6950faea04 16,20,22,26-30,34,38,61,63,70
+  s_a8747cece24f95::t_7050c30d399567 51-54,56
+  s_8449f3e034e69f::t_974363e1c14003 66
+  s_8449f3e034e69f::t_4dd40673a22ee9 74-78
+  s_a8747cece24f95::t_52fe538cbe8e52 47-50
+  s_a8747cece24f95::t_027e6f62fdcb67 5,12,42-43,46,55
+systems/x86_64-linux/archive/monsrv/default.nix
+  s_52250892174e2c::t_5abca41e9a96ed 37,41-43
+  s_52250892174e2c::t_58d0ac99b76cfe 34-36
+  s_52250892174e2c::t_26e09cff926968 1-24
+  s_52250892174e2c::t_c3f84ee288b6ad 31-33
+  s_52250892174e2c::t_696aaea26bb058 44
+  s_52250892174e2c::t_b05d49cde22556 38-40
+  s_52250892174e2c::t_051fa63a9c39dc 28-30
+  s_52250892174e2c::t_babe17553caf28 25-27
+systems/x86_64-linux/openbao/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/installer-iso/default.nix
+  s_2c491f8d729f12::t_54b4280a2e668f 6
+  s_a8747cece24f95::t_c31b3a91bc4ab5 11
+  s_0ab3588915a456::t_3fdf9920038fed 18
+  s_0ab3588915a456::t_538c30659406b5 1-5,7-10,12-17,19-21
+systems/x86_64-linux/dns-bench/default.nix
+  s_a7144b517d7c1b::t_abf6a94b5835ee 10-19,21-31,131
+  s_a7144b517d7c1b::t_f5d6e3b9bdcf5c 53-82
+  s_a7144b517d7c1b::t_e834868fed9164 1-6,8-9,40-44,83-94
+  s_a7144b517d7c1b::t_205492c9edc252 7,32-39,45-52,95-130,132-133
+  s_a7144b517d7c1b::t_238a9e6b5961a0 20
+systems/x86_64-linux/archive/zitadel/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-14
+scripts/git-sops.sh
+  s_2c491f8d729f12::t_6bd584d4dc42e2 4-6
+  s_2c491f8d729f12::t_a3e549f44b16aa 1-3
+  s_2c491f8d729f12::t_454f0f94054696 325-334
+  s_2c491f8d729f12::t_1cd3b6ea981588 293-297
+  s_2c491f8d729f12::t_20a75ed80954d1 362-382,438-444,448-452,490-491
+  s_2c491f8d729f12::t_2986a8c7c81e71 13,18-19,27-28,271-283,292,308-309,315,324,335,340-341,350-351,353-361,383-437,445-447,453-460,492
+  s_2c491f8d729f12::t_6c2bbec214dcd1 342-349
+  s_2c491f8d729f12::t_33585bf98f9eea 461-489
+  s_2c491f8d729f12::t_a3ba4839e401ac 284-291
+  s_2c491f8d729f12::t_5e12f174e1eee4 304-307
+  s_2c491f8d729f12::t_eec545b5b1f0b0 29-270,298-303
+  s_2c491f8d729f12::t_8dd2656db1a6c1 10-12
+  s_2c491f8d729f12::t_c3de9cf13ddfd1 7-9
+  s_2c491f8d729f12::t_bc2d4ffc1930ae 14-17
+  s_2c491f8d729f12::t_8ec2f7c9c199db 316-323
+  s_2c491f8d729f12::t_5f793b8c17ecfa 20-26
+  s_2c491f8d729f12::t_fcfc7a3d3c8ac5 336-339
+  s_2c491f8d729f12::t_5015882025719b 352
+  s_2c491f8d729f12::t_be8f414ab32406 310-314
+systems/x86_64-linux/dns-bench/README.md
+  s_a7144b517d7c1b::t_abf6a94b5835ee 32,35-40,82-84,86-88,91-92,104-112,114
+  s_a7144b517d7c1b::t_f5d6e3b9bdcf5c 5-6,62,65-66,69-72,78-81
+  s_a7144b517d7c1b::t_e834868fed9164 41-45
+  s_a7144b517d7c1b::t_e0873083dfd998 85,89-90,113
+  s_a7144b517d7c1b::t_3cb106648170cc 93,100-103
+  s_a7144b517d7c1b::t_205492c9edc252 1-4,7-31,33-34,46-61,63-64,67-68,73-77
+  s_a7144b517d7c1b::t_d78ea5a90f1a3e 94-97
+  s_a7144b517d7c1b::t_69dde50516957f 98-99
+homes/aarch64-linux/orangepi@orangepi/default.nix
+  h_30afaad5482ce1 1-57
+systems/x86_64-linux/archive/pangolin/default.nix
+  h_30afaad5482ce1 1-99
+systems/x86_64-linux/netbird/files/crypt/traefik-dynamic.yaml
+  h_30afaad5482ce1 1-5
+  h_30afaad5482ce1 6-18
+systems/x86_64-linux/openbao/files/crypt/client-ca.pem
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/headscale/files/crypt/derp.config
+  h_30afaad5482ce1 1-13
+  h_30afaad5482ce1 14
+.github/workflows/_sbc-image-build.yaml
+  s_a8747cece24f95::t_8e2da9c193d588 1-77
+systems/x86_64-linux/git/hardware-configuration.nix
+  h_30afaad5482ce1 1-17
+systems/aarch64-linux/rockpi-4b/hardware.nix
+  s_a8747cece24f95::t_ea080a6e43581e 36-43
+  s_a8747cece24f95::t_9575e141975421 1-35,44
+systems/x86_64-linux/identity/files/config.hcl
+  h_30afaad5482ce1 1-17
+  s_b83482356f5360::t_10a9bf9c9775f5 18
+systems/x86_64-linux/git/files/crypt/docker-compose.nix
+  h_30afaad5482ce1 1,10-11
+  h_30afaad5482ce1 2-9,12-18
+systems/x86_64-linux/archive/plex/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/omni/files/crypt/omni.asc
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/luks/files/crypt/docker-compose.yml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/fleet/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/netbird/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/omni/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/rustdesk/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/identity/files/crypt/openbao.nix
+  s_b83482356f5360::t_b907746becef40 1-14
+  s_b83482356f5360::t_38a45e3a84c519 15-17
+  s_b83482356f5360::t_5a8020cb839e04 18
+systems/x86_64-linux/monitor/files/crypt/zabbix.nix
+  s_52250892174e2c::t_696aaea26bb058 1-17
+  s_52250892174e2c::t_3ad6b185a13b1d 18
+systems/x86_64-linux/archive/kuma/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/archive/headscale/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/archive/headscale/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/db/hardware-configuration.nix
+  h_30afaad5482ce1 1-17
+systems/x86_64-linux/db/default.nix
+  h_30afaad5482ce1 1-160,162-217
+  h_772d05b0e130f8 161
+systems/x86_64-linux/archive/headscale/files/crypt/docker-compose.nix
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/gt-2/default.nix
+  h_30afaad5482ce1 1-114
+systems/x86_64-linux/archive/gt-1/hardware-configuration.nix
+  h_30afaad5482ce1 1-22
+systems/x86_64-linux/archive/kuma/default.nix
+  h_30afaad5482ce1 1-98
+scripts/nixos-install.sh
+  h_30afaad5482ce1 1-225
+systems/x86_64-linux/archive/zitadel/default.nix
+  h_30afaad5482ce1 1-137
+systems/aarch64-linux/ns02/default.nix
+  h_30afaad5482ce1 1-28
+.gitattributes
+  h_30afaad5482ce1 1-2
+secrets/ssh_host_ed25519_key.pub
+  h_30afaad5482ce1 1
+  h_30afaad5482ce1 2-18
+systems/x86_64-linux/saas/files/crypt/docker-compose.nix
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/monitor/files/crypt/victoriametrics.nix
+  s_a6607f3fd425ce::t_187dddf221ee05 1-18
+systems/x86_64-linux/archive/snapshot/disko.nix
+  h_30afaad5482ce1 1-37
+flake.nix
+  s_0ad283f421f493::t_bedd3a0bd0eed8 19-22
+  s_9888e5ac2db143::t_16c904130067eb 93,138-148
+  s_9888e5ac2db143::t_4802834db71bd5 137
+  s_3a4ae14b25c0f4::t_e85fea23ed4013 130-134
+  s_a8747cece24f95::t_21bfef7d39f796 190
+  s_9888e5ac2db143::t_28f5c91a3c0a25 45,56,105
+  s_0ad283f421f493::t_22210bd7fb84a5 8
+  s_0ad283f421f493::t_eca2ed929df300 40
+  s_a8747cece24f95::t_52fe538cbe8e52 186,189,195-198,366-368,370
+  s_a8747cece24f95::t_2b2f8da994d06e 374-375
+  s_0ad283f421f493::t_ed12e1dcb6de16 393
+  s_2c491f8d729f12::t_1b5666ce29f86e 1-4,58-81,88-92,94-104,106-129,135,360-365,385-391
+  s_0ad283f421f493::t_6f7c3dd23f4b52 31-33
+  s_9888e5ac2db143::t_00d17885d2ab96 5-7,42-44,52-55
+  s_0ad283f421f493::t_e33317b05c2be2 25-28
+  s_0ab3588915a456::t_eb3961853c9684 378
+  s_bef73a89456734::t_d6c2a1bc892c93 191-194,199-200
+  s_0ad283f421f493::t_dc5473dbf1df8b 9-12,17-18,23-24,29-30,34-35,39,41,46,50-51,57,392
+  s_0ad283f421f493::t_36b3b6f3c99f11 36-38
+  s_2c491f8d729f12::t_54b4280a2e668f 136,149-185,201-359
+  s_0ad283f421f493::t_2f2044c2366a8a 47-49
+  s_a8747cece24f95::t_e66045e48b10e8 371
+  s_a8747cece24f95::t_9a962c6d7cdb44 83-85
+  s_a8747cece24f95::t_a8cd32ba9ba7e7 372-373,376-377
+  s_0ab3588915a456::t_836ea00340b015 379-381
+  s_a8747cece24f95::t_7050c30d399567 82,86-87,187-188,369
+  s_0ab3588915a456::t_a4f0c61235b4f8 382-384
+  s_0ad283f421f493::t_60406d88ec28b2 13-16
+systems/x86_64-linux/archive/rustdesk/default.nix
+  h_30afaad5482ce1 1-97
+secrets/crypt.toml
+  h_30afaad5482ce1 1-2
+  h_30afaad5482ce1 3-22
+systems/x86_64-linux/dns-bench/scripts/dns-bench-client
+  s_a7144b517d7c1b::t_d78ea5a90f1a3e 21,37-38,49,294-295,310,319-321
+  s_a7144b517d7c1b::t_69dde50516957f 289-290,296-309
+  s_a7144b517d7c1b::t_1394732e397df6 313-318
+  s_a7144b517d7c1b::t_a2a2f62b9d147f 19,45,109
+  s_a7144b517d7c1b::t_59631b575f5a93 291-293
+  s_a7144b517d7c1b::t_3cb106648170cc 17-18,20,39-44,46-48,50-64,134-136
+  s_a7144b517d7c1b::t_e0873083dfd998 1-16,22-36,65-108,110-133,137-288,311-312,322-368
+.github/workflows/sbc-rockpi-4b.yaml
+  s_a8747cece24f95::t_8e2da9c193d588 1-8,10-26
+  s_a8747cece24f95::t_71b17b7a34e43e 9
+systems/x86_64-linux/archive/orangepi/default.nix
+  h_30afaad5482ce1 1-92
+systems/x86_64-linux/archive/snapshot/default.nix
+  h_30afaad5482ce1 1-93
+bootstrap/alpine/build.sh
+  s_8449f3e034e69f::t_974363e1c14003 21,29-56
+  s_8449f3e034e69f::t_a00420b814dbb2 8-9,18
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-7,10-17,19,22-28
+  s_8449f3e034e69f::t_278699ad36c4bf 20
+systems/x86_64-linux/identity/default.nix
+  s_e878dc0937f75b::t_67951e5163437d 36-38,43-45
+  s_e878dc0937f75b::t_5daef5d446526a 99-101,107-109
+  s_e878dc0937f75b::t_a9484ebb669ccc 27,111
+  s_e878dc0937f75b::t_94133453701f59 24-26
+  s_e878dc0937f75b::t_3b7adfd527ec8e 47
+  s_e878dc0937f75b::t_b7f4c3245b7438 28-30,32-34
+  h_30afaad5482ce1 1-23,31,39-42,53-60,62-76,78-97,102-106
+  s_e878dc0937f75b::t_febdf72366acaa 35,46,48-52,61,77,98,110
+systems/x86_64-linux/dns-bench/scripts/vps-check.sh
+  s_a7144b517d7c1b::t_238a9e6b5961a0 143,181-182,244,254
+  s_a7144b517d7c1b::t_04247bae13dd30 152
+  s_a7144b517d7c1b::t_2d1d5c7a790d0c 110-118,234,239-241,255-272,274-276
+  s_a7144b517d7c1b::t_abf6a94b5835ee 1-109,119-137,139-142,153-180,183-233,235-238,242-243,245-253,273,277-287
+  s_a7144b517d7c1b::t_e834868fed9164 138,144-151
+systems/x86_64-linux/db/files/secrets.yaml
+  h_30afaad5482ce1 1-26
+docs/installer-assets.md
+  s_a8747cece24f95::t_22939e0baa7072 56-59
+  s_a8747cece24f95::t_8f028e25e3aaaf 55,60
+  s_bef73a89456734::t_0a891220c48ed7 1-4,6-8,10,12,34-38,42,44-54,70-71
+  s_bef73a89456734::t_df13a57272f264 5,9,11,13-19,39-41,43,69
+  s_a8747cece24f95::t_734c94e14c7bd2 61-64
+  s_a8747cece24f95::t_7fd4da29af31d3 65-68
+  s_a8747cece24f95::t_c31b3a91bc4ab5 20-33
+systems/x86_64-linux/archive/headscale/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/aarch64-linux/rockpi-4b/assets.nix
+  s_a8747cece24f95::t_9575e141975421 1-5,7,10-29,33-34
+  s_a8747cece24f95::t_9b14abde6f8f07 6,9,30-32
+  s_a8747cece24f95::t_71b17b7a34e43e 8
+systems/x86_64-linux/identity/files/unseal-20260803-1.key
+  s_b83482356f5360::t_7315a766e1cc18 1,3-5,7-9,11-13,16-18
+  h_30afaad5482ce1 2,6,10,14-15
+.gitignore
+  s_8449f3e034e69f::t_4dd40673a22ee9 4
+  s_8449f3e034e69f::t_4d1dbd62c9dd2f 1-3
+systems/x86_64-linux/archive/monsrv/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/omni/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+bootstrap/alpine/README.md
+  s_b11545dd8284f3::t_deab14f66d78ec 4-5
+  s_a8747cece24f95::t_734c94e14c7bd2 10-13
+  s_a8747cece24f95::t_f746c7abd5b84d 6-7
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-2,9,18-23,40-47
+  s_bef73a89456734::t_df13a57272f264 38-39
+  s_bef73a89456734::t_0a891220c48ed7 35,37
+  s_a8747cece24f95::t_22939e0baa7072 8
+  s_8449f3e034e69f::t_974363e1c14003 3,24-34,36
+  s_a8747cece24f95::t_7fd4da29af31d3 14-17
+systems/x86_64-linux/archive/monsrv/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/netbird/files/crypt/config.yaml
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/identity/files/crypt/traefik.nix
+  s_e878dc0937f75b::t_9db7c6fd626376 1-12
+  s_e878dc0937f75b::t_75e2878c52ac42 13-14
+systems/x86_64-linux/saas/files/crypt/omni.nix
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/saas/files/crypt/zitadel.nix
+  h_30afaad5482ce1 1,3,6
+  h_30afaad5482ce1 2,4-5,7-18
+systems/x86_64-linux/identity/files/crypt/docker.nix
+  s_e878dc0937f75b::t_a9484ebb669ccc 1-17
+  s_e878dc0937f75b::t_1e91749935355e 18
+systems/x86_64-linux/saas/files/crypt/ca.crt
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/monitor/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/netbird/files/Caddyfile
+  h_30afaad5482ce1 1-18
+.github/workflows/installer-assets.yaml
+  s_bef73a89456734::t_0a891220c48ed7 1-9,11-21,23-69,71-72,75-77,86,88-95,97-98,100-119,128,130-131,134-135
+  s_bef73a89456734::t_df13a57272f264 70,73-74,78-85,120-127,129,132-133
+  h_30afaad5482ce1 87,96,99
+  s_a8747cece24f95::t_efb0ae40a5e855 10,22
+systems/x86_64-linux/db/disko.nix
+  h_30afaad5482ce1 1-37
+docs/sbc-bootstrap-images.md
+  s_a8747cece24f95::t_7050c30d399567 63-69,77-93,100,115-118
+  s_a8747cece24f95::t_a5b0b90db9d633 23,170
+  s_a8747cece24f95::t_9a962c6d7cdb44 70-76
+  s_a8747cece24f95::t_5a8083f97fd81f 110
+  s_a8747cece24f95::t_a3634ae8dafa90 174-175
+  s_a8747cece24f95::t_f2a0e0d9eca194 11,13,122-124,130-135
+  s_a8747cece24f95::t_c3de6f8bc98a8c 136
+  s_a8747cece24f95::t_8e2da9c193d588 34-36
+  s_a8747cece24f95::t_86c6d66f23d139 111-114
+  s_a8747cece24f95::t_92bb5d8bd61539 1-10,12,14-22,24,27-33,37-43,94-99,102,104-109,119-121,125-129,137-169,171-173
+  s_a8747cece24f95::t_ba4bf2f6d3a567 25-26,44-49,51-62,101,103
+  s_a8747cece24f95::t_71b17b7a34e43e 50
+.github/workflows/sbc-rock-5a.yaml
+  s_a8747cece24f95::t_71b17b7a34e43e 9
+  s_a8747cece24f95::t_52fe538cbe8e52 1-8,10-26
+systems/x86_64-linux/fleet/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/archive/luks/default.nix
+  h_30afaad5482ce1 1-145
+systems/x86_64-linux/saas/default.nix
+  h_772d05b0e130f8 91,95-99
+  h_30afaad5482ce1 1-90,92-94,100-108
+systems/x86_64-linux/saas/files/crypt/docker.nix
+  h_30afaad5482ce1 1-18
+homes/aarch64-darwin/jinx@Jinxs-Mac-mini/default.nix
+  h_30afaad5482ce1 1-5
+systems/aarch64-linux/rock-5a/default.nix
+  s_a8747cece24f95::t_52fe538cbe8e52 40-43,49,51
+  s_a8747cece24f95::t_ca7f711cf218a9 44-48
+  s_a8747cece24f95::t_8a932ea6b8263d 50
+  s_a8747cece24f95::t_9b14abde6f8f07 1-39,52-58
+systems/x86_64-linux/base/default.nix
+  h_30afaad5482ce1 1-88
+modules/nixos/sbc-bootstrap/default.nix
+  s_a8747cece24f95::t_9575e141975421 6-13,15-16,25,34,67,76,82,85
+  s_a8747cece24f95::t_f2a0e0d9eca194 1,3-5,35
+  s_a8747cece24f95::t_432c112eabb9c2 22-24,26-33,36-48,55-66,68-75,77-78,80-81,83
+  s_a8747cece24f95::t_b362774a29fa6f 2,14,19-21,84
+  s_a8747cece24f95::t_43a90e3ca8dffc 79
+  s_a8747cece24f95::t_c31b3a91bc4ab5 17-18,49-54
+systems/x86_64-linux/archive/gt-1/default.nix
+  h_30afaad5482ce1 1-106
+systems/x86_64-linux/archive/gt-2/hardware-configuration.nix
+  h_30afaad5482ce1 1-22
+systems/aarch64-linux/rock-5a/hardware.nix
+  s_a8747cece24f95::t_9b14abde6f8f07 1-41
+systems/x86_64-linux/archive/headscale/default.nix
+  h_30afaad5482ce1 1-102
+systems/x86_64-linux/saas/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/omni/default.nix
+  h_30afaad5482ce1 1-142
+systems/x86_64-linux/netbird/files/crypt/netbird.nix
+  h_30afaad5482ce1 1,3,6,11-12,17-18
+  h_30afaad5482ce1 2,4-5,7-10,13-16
+systems/x86_64-linux/monitor/default.nix
+  s_a6607f3fd425ce::t_187dddf221ee05 37
+  h_30afaad5482ce1 25
+  s_c4fb467196cf52::t_ea91743ff0c5be 1-24,26-36
+systems/aarch64-linux/orange-pi-6-plus/assets.nix
+  s_a8747cece24f95::t_7050c30d399567 1-11,27-37
+  s_a8747cece24f95::t_076c30c09d8b6a 12-26
+systems/x86_64-linux/access/files/crypt/traefik-dynamic.yaml
+  h_30afaad5482ce1 1-5
+  h_30afaad5482ce1 6-18
+systems/x86_64-linux/dns-bench/disko.nix
+  s_a7144b517d7c1b::t_205492c9edc252 1-39
+systems/x86_64-linux/archive/plex/hardware-configuration.nix
+  h_30afaad5482ce1 1-19
+systems/x86_64-linux/saas/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/saas/files/crypt/init-mongo.sh
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/archive/headscale/files/crypt/config-wpha.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/dev/default.nix
+  h_30afaad5482ce1 1-75
+systems/x86_64-linux/saas/files/crypt/ui.nix
+  h_30afaad5482ce1 1-18
+systems/aarch64-linux/orange-pi-6-plus/hardware.nix
+  s_a8747cece24f95::t_9a962c6d7cdb44 9-10
+  s_a8747cece24f95::t_7050c30d399567 1-8,11-31,33-52,57-67
+  s_a8747cece24f95::t_de6b9135b74171 32,53-56
+secrets/luks.key
+  h_30afaad5482ce1 1
+  h_30afaad5482ce1 2-18
+.sops.yaml
+  s_a7144b517d7c1b::t_9a4bed436cccfa 66-67
+  s_a7144b517d7c1b::t_8675515752ac1b 26
+  s_a7144b517d7c1b::t_e834868fed9164 10,23-25,27-31,33-35,48-50,63-65,68-70,73-75,83-85,88-90
+  s_a7144b517d7c1b::t_d853a272a08df3 32
+  h_772d05b0e130f8 15,22,47,51-56,72
+  s_a7144b517d7c1b::t_248cf41c72f7e1 82
+  s_a7144b517d7c1b::t_dd8a9813de1429 1-8,16-21,36,62,71,87
+  h_30afaad5482ce1 9,11-14,37-46,57-61,76-81,86
+systems/aarch64-darwin/Jinxs-Mac-mini/default.nix
+  h_30afaad5482ce1 1-146
+systems/x86_64-linux/archive/zitadel/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/archive/plex/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/access/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/archive/gt-2/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/saas/files/crypt/Caddyfile
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/netbird/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/openbao/files/config.hcl
+  s_b83482356f5360::t_919eb75d44dbb5 2,6-7,10-11,14-16
+  h_30afaad5482ce1 1,3-5,8-9,12-13,17-18
+systems/x86_64-linux/dev/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/archive/pangolin/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/monitor/files/crypt/caddy.nix
+  s_a6607f3fd425ce::t_a88f4d41325c65 3
+  s_a6607f3fd425ce::t_187dddf221ee05 1-2,4-12,14-16
+  s_a6607f3fd425ce::t_7a2f9fcbd8a93b 13
+  s_a6607f3fd425ce::t_d75ca498d9b96f 17-18
+systems/x86_64-linux/git/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/omni/files/crypt/docker-compose.nix
+  h_30afaad5482ce1 1-14
+bootstrap/authorized_keys
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-2
+systems/x86_64-linux/netbird/files/crypt/docker-compose.yaml.bak
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/saas/files/crypt/rootca.crt
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/archive/plex/files/crypt/vector.toml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/fleet/files/crypt/docker-compose.nix
+  s_b11545dd8284f3::t_4f3858cc0ccdbc 11
+  s_b11545dd8284f3::t_f1f50c56003a26 1-10
+  s_b11545dd8284f3::t_bafe9aa5c3fb2d 12-14
+systems/x86_64-linux/monitor/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/default.nix
+  h_30afaad5482ce1 1-98
+systems/x86_64-linux/installer-netboot/default.nix
+  s_0ab3588915a456::t_f84eb31df6afcd 1-5,7-12,14-19
+  s_a8747cece24f95::t_c31b3a91bc4ab5 13
+  s_2c491f8d729f12::t_54b4280a2e668f 6
+systems/x86_64-linux/_installer-base.nix
+  s_0ab3588915a456::t_5ee2be8360a7bc 2-7,12,17-18,24-31,33-35,40-44,53-55,58-59,69,71,77,79-96,98
+  s_2c491f8d729f12::t_5c2d52325f9643 57
+  s_2c491f8d729f12::t_2c191f2f531a4e 70
+  s_a8747cece24f95::t_430efeb963e914 72-75
+  s_2c491f8d729f12::t_add9979dbbe118 78
+  s_a8747cece24f95::t_c31b3a91bc4ab5 8,19-20,32,36-39,50-51,56,60-68,76
+  s_2c491f8d729f12::t_f1155d4a3acc02 1
+  s_8449f3e034e69f::t_9794ea3e2921a3 13-16
+  s_a8747cece24f95::t_72a9503b52c228 45-49,52
+  h_30afaad5482ce1 97
+  s_2c491f8d729f12::t_54b4280a2e668f 21-23
+  s_a8747cece24f95::t_25b941a8a382f2 9-11
+lib/sbc/armbian-rockchip64.nix
+  s_a8747cece24f95::t_71b17b7a34e43e 1-96
+systems/x86_64-linux/saas/files/crypt/traefik.nix
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/archive/monsrv/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/dev/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+.github/workflows/sbc-orange-pi-6-plus.yaml
+  s_a8747cece24f95::t_7050c30d399567 1-8,10-26
+  s_a8747cece24f95::t_9a962c6d7cdb44 9
+systems/x86_64-linux/access/default.nix
+  h_30afaad5482ce1 1-26,28,30-46,54-105
+  s_e878dc0937f75b::t_16c3be9ace1c92 27
+  s_e878dc0937f75b::t_0b8f2ebed70a59 29,47-52,106
+  s_e878dc0937f75b::t_041023d072eb66 53
+systems/x86_64-linux/saas/files/crypt/dex.nix
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/archive/plex/default.nix
+  h_30afaad5482ce1 1-113
+systems/x86_64-linux/base/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/netbird/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/archive/kuma/files/crypt/docker-compose.nix
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/snapshot/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/omni/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/archive/rustdesk/files/crypt/Caddyfile
+  h_30afaad5482ce1 1-12
+  h_30afaad5482ce1 13-14
+systems/x86_64-linux/archive/luks/files/crypt/Caddyfile
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/fleet/default.nix
+  h_30afaad5482ce1 1-101
+systems/x86_64-linux/access/files/crypt/docker.nix
+  s_e878dc0937f75b::t_d0d89b52f36afd 6-10
+  s_e878dc0937f75b::t_16c3be9ace1c92 1
+  s_e878dc0937f75b::t_b5c5568d65807a 3
+  s_e878dc0937f75b::t_d0536da194efc0 11-16
+  s_e878dc0937f75b::t_2347ed6c2e0714 2
+  s_e878dc0937f75b::t_b785432eec7191 4-5
+  s_e878dc0937f75b::t_0a49823de60e49 17-18
+homes/aarch64-linux/nixos@default/default.nix
+  h_30afaad5482ce1 1-57
+lib/sbc/armbian-cix-p1.nix
+  s_a8747cece24f95::t_076c30c09d8b6a 11-13
+  s_a8747cece24f95::t_9a962c6d7cdb44 1-8,10,14-15,26-28,34-52
+  s_b11545dd8284f3::t_ed6ad5993fa4a6 9,16-19,21-25,29
+  s_b11545dd8284f3::t_a607ad0ad5517c 20
+  s_a8747cece24f95::t_de6b9135b74171 30-33
+systems/aarch64-darwin/Jinxs-Macbook-Pro/default.nix
+  h_30afaad5482ce1 1-146
+systems/x86_64-linux/archive/gt-1/disko.nix
+  h_30afaad5482ce1 1-37
+systems/x86_64-linux/monitor/files/crypt/grafana.nix
+  s_c4fb467196cf52::t_dae3e2a8199539 1-17
+  s_c4fb467196cf52::t_e11c055009259d 18
+modules/nixos/common/template.nix
+  h_30afaad5482ce1 1-39
+bootstrap/alpine/genapkovl-bootstrap.sh
+  s_b11545dd8284f3::t_deab14f66d78ec 60,73-74,105-108,116-126,132,136,139-149,152-165,170-172,189
+  s_8449f3e034e69f::t_7a8686114a8885 66-72,81-82,84-86
+  s_a8747cece24f95::t_23ab5f38da8264 83
+  s_a8747cece24f95::t_22939e0baa7072 168
+  s_a8747cece24f95::t_734c94e14c7bd2 39-44,127-130,133-135
+  s_8449f3e034e69f::t_90820f709e970e 30-31
+  s_a8747cece24f95::t_f746c7abd5b84d 29
+  s_8449f3e034e69f::t_5ce2065f8ce673 1-28,32-38,45-59,61-65,89-104,109-115,173-185,187-188,190-196
+  s_a8747cece24f95::t_8f028e25e3aaaf 75-80,137-138,166-167,169
+  s_8449f3e034e69f::t_f52f7f31ad58c6 87-88,186
+  s_a8747cece24f95::t_09e11193808e40 150-151
+  s_8449f3e034e69f::t_bde40ef55496f6 131
+systems/x86_64-linux/identity/files/secrets.yaml
+  h_30afaad5482ce1 1-26
+systems/x86_64-linux/fleet/files/crypt/.env
+  h_30afaad5482ce1 8
+  h_30afaad5482ce1 1-7,9-14
+systems/x86_64-linux/archive/rustdesk/disko.nix
+  h_30afaad5482ce1 1-37
+systems/aarch64-linux/orange-pi-6-plus/default.nix
+  s_a8747cece24f95::t_7050c30d399567 1-55
+systems/x86_64-linux/archive/kuma/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/git/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1
+  h_30afaad5482ce1 2-18
+.vscode/settings.json
+  h_30afaad5482ce1 1-3
+systems/x86_64-linux/access/files/crypt/config.yaml
+  h_30afaad5482ce1 1-18
+systems/x86_64-linux/openbao/files/crypt/root-ca.pem
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/rustdesk/files/crypt/docker-compose.yaml
+  h_30afaad5482ce1 1-14
+secrets/ssh_host_ed25519_key
+  h_30afaad5482ce1 1-7
+  h_30afaad5482ce1 8-18
+systems/x86_64-linux/fleet/files/crypt/docker-compose.yaml
+  s_b11545dd8284f3::t_7c61d14a97c3de 1
+  s_b11545dd8284f3::t_6c292087424b8c 3
+  s_b11545dd8284f3::t_447eba6284e142 2
+  s_b11545dd8284f3::t_79af25a37d27d0 4-6
+  s_b11545dd8284f3::t_6c2f834a980c69 7-14
+systems/x86_64-linux/archive/luks/files/crypt/init-mongo.sh
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/orangepi/hardware-configuration.nix
+  h_30afaad5482ce1 1-19
+systems/x86_64-linux/archive/kuma/hardware-configuration.nix
+  h_30afaad5482ce1 1-24
+systems/x86_64-linux/netbird/files/crypt/docker-compose.nix
+  s_4dd1717c6999fd::t_d7fd9b31c0f0a3 1
+  s_4dd1717c6999fd::t_1220115eac0f37 16
+  s_4dd1717c6999fd::t_e6b32645a4fa00 2-4,13-15
+  s_4dd1717c6999fd::t_6533a3e715b13d 17-18
+  s_4dd1717c6999fd::t_7cb2d3700c8394 5-12
+systems/x86_64-linux/openbao/files/crypt/Caddyfile
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/archive/headscale/files/crypt/config.yaml
+  h_30afaad5482ce1 1-14
+systems/x86_64-linux/dns-bench/files/secrets.yaml
+  s_a7144b517d7c1b::t_ff69aac1edccde 1-25
+systems/x86_64-linux/monitor/files/crypt/vmauth-config.yaml
+  h_30afaad5482ce1 1-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.20",
+  "base_commit_sha": "ed674f1afcd861e90b69169b70b2a482adf861ae",
+  "prompts": {},
+  "humans": {
+    "h_30afaad5482ce1": {
+      "author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "h_772d05b0e130f8": {
+      "author": "JinxCappa"
+    }
+  },
+  "sessions": {
+    "s_0ab3588915a456": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "5ca7032c-cf97-4d0e-ad27-b6220bbd3760",
+        "model": "claude-opus-4-8"
+      },
+      "human_author": null
+    },
+    "s_0ad283f421f493": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f2336-c088-7f72-8698-ea67114a4812",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_10e5fa397ea8a3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eb239-f1c8-7552-bd92-deaa3c529147",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_29c73c03d45f99": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f1b05-0052-7021-882d-0ea3810079a6",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_2c491f8d729f12": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019efee4-3b3e-7840-8db5-1c91aeac9530",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_3a4ae14b25c0f4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f2372-356e-7f22-b82a-f20b183c8ae9",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_4dd1717c6999fd": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ef651-9d96-7ae3-873a-e66946117b41",
+        "model": "gpt-5.5"
+      },
+      "human_author": null
+    },
+    "s_52250892174e2c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eaeb7-f9c6-7d02-843c-966d1a251672",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_7b2c9ff4aded74": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ebc87-c024-74f2-b106-e6a28af902cd",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_8449f3e034e69f": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f6ca0-a9ae-7540-a5f1-6ef79fda62ea",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_9888e5ac2db143": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f60ab-d02b-7853-8b69-e50d171abb82",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_a6607f3fd425ce": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019eb219-15df-7652-8e85-b7c88afd6389",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_a7144b517d7c1b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f8ef2-7ef1-7b62-a565-050bb2d660e3",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_a8747cece24f95": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f99f5-8264-7740-8ffe-1d8eaacd351e",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_b11545dd8284f3": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fa3bd-a04e-7b23-8507-29cfb0910e48",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_b83482356f5360": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc86a-88b9-7fd1-a754-fb612f729792",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_bef73a89456734": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f91fd-d27f-7441-b49e-10a7f3b4f2ad",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_c4fb467196cf52": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019ecb49-73e8-7df0-a882-faf4967d7d49",
+        "model": "gpt-5.5"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_e878dc0937f75b": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fc817-35ba-7451-8210-14021ab9a673",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    },
+    "s_f2e4593363b114": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f8b67-17e3-70e2-a6eb-862c5e5b1427",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": null
+    }
+  }
+}
