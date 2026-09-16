@@ -1,0 +1,43 @@
+systems/x86_64-linux/access/files/crypt/netbird.nix
+  h_30afaad5482ce1 2-18
+  s_949990c8fa14a5::t_d49b7c353e8b81 1
+systems/x86_64-linux/base/default.nix
+  s_949990c8fa14a5::t_59f8b53e4d277c 1-39
+systems/x86_64-linux/base/hardware-configuration.nix
+  s_949990c8fa14a5::t_e9ed424b6ceb13 1-17
+systems/x86_64-linux/devbox/default.nix
+  s_949990c8fa14a5::t_099e36bcf6e3ba 1-48
+systems/x86_64-linux/saas/files/crypt/docker.nix
+  s_949990c8fa14a5::t_74d277da57b588 1-18
+systems/x86_64-linux/saas/files/secrets.yaml
+  s_a396398cdcbcc2::t_2ceec52030e6d4 1-32
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.4",
+  "base_commit_sha": "95fd9648b0aa076472f6295f3f5994dc1bb02ff1",
+  "prompts": {},
+  "humans": {
+    "h_30afaad5482ce1": {
+      "author": "JinxCappa <git@jinxcappa.dev>"
+    }
+  },
+  "sessions": {
+    "s_949990c8fa14a5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a04421-0d63-73c3-91b5-9ca6db260ad8",
+        "model": "gpt-5.6-terra"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    },
+    "s_a396398cdcbcc2": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a03648-7ecf-7a42-8850-3952fdf926fe",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "JinxCappa <git@jinxcappa.dev>"
+    }
+  }
+}
